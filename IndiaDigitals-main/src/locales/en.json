@@ -1,4 +1,12 @@
 {
+    "hero-section": {
+        "heading1": "Technical Staffing ",
+        "heading2": "Solutions",
+        "subtitle": "Designed for Startups.",
+        "description1": "Access 4,000+ timezone aligned software engineers ",
+        "description2": "with experience in 100+ technologies.",
+        "scheduleacall": "Schedule A Call"
+    },
     "navbar": {
         "services": "Services",
         "ourclients": "Our Clients",
