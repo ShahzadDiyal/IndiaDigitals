@@ -1,15 +1,20 @@
+"use client";
+import { useTranslations } from "next-intl";
+
 const WeCover = ({ bgColor }) => {
+  const t = useTranslations("home-page");
+
   return (
     <div className={bgColor ? bgColor : ""}>
       <div className="text-center pt-28 pb-16 flex flex-col gap-3 sm:px-0 px-5 ">
         <h1 className="text-[2.6rem] text-gray-800/95 font-medium ">
-          Yes. We cover your tech stack
+          {t("techStackHeading")}
           <span className="text-orange-500/70">.</span>
         </h1>
         <p className="text-gray-600/90 text-xl leading-[30px]">
-          Our 4,000+ team has expertise in almost every
+          {t("techStack-p1")}
           <br />
-          programming language.
+          {t("techStack-p2")}
         </p>
       </div>
       <div className="sm:mb-3 overflow-hidden">
@@ -77,17 +82,11 @@ const WeCover = ({ bgColor }) => {
       <div className="mt-16 pb-20 text-center w-fit m-auto">
         <p className=" text-md md:my-0 font-medium gap-2 border-b-2  border-slate-800 pb-3 pr-6">
           <span className="h-full  inline-flex cursor-pointer custom-hover-translate text-black">
-            <a href="/technologies">All technologies we work with</a>
-            <svg
-              width="24"
-              height="24"
-              className="transition-colors duration-300 w-6 h-6"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M3 13L17.17 13L13.59 16.59L15 18L21 12L15 6L13.59 7.41L17.17 11L3 11L3 13Z"></path>
-            </svg>
+            <a href="/technologies">
+              {t("allTechnologies")}
+              <span className="rtl:inline ltr:hidden">←</span>
+              <span className="ltr:inline rtl:hidden">→</span>
+            </a>
           </span>
         </p>
       </div>
