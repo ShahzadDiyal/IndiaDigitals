@@ -3,8 +3,12 @@ import BreadCrumb from "@/components/BreadCrumb";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import React from "react";
+import { useTranslations } from "next-intl";
+
 
 const page = () => {
+  const t = useTranslations("client-page");
+  
   const items = [
     { id: 1, img_src: "/forcepoint.png", link: "/clients/forcepoint" },
     { id: 2, img_src: "/forcepoint.png", link: "/clients/forcepoint" },
@@ -25,17 +29,16 @@ const page = () => {
       <section className=" px-7 2xl:px-36 pb-10 xl:pb-16 flex flex-col 2xl:flex-row">
         <div className="mt-12 2xl:w-[55%]">
           <div className="text-zinc-500/95 font-bold text-sm  tracking-widest">
-            OUR CLIENTS
+            {t("heading")}
           </div>
           <div className="my-6">
             <span>
               <p className="  text-gray-900/90 my-4 font-medium text-5xl xl:text-7xl">
-                Over 10 Years of
-                <br /> Over Delivering.&nbsp;
+                {t("subheading1")}
+                <br /> {t("subheading2")}&nbsp;
               </p>
               <p className=" text-gray-900/60 my-4  text-2xl  sm:text-4xl leading-[30px] sm:leading-[44px]">
-                500+ active clients with an average relationship of over 3
-                years. And a 96% retention rate.
+                {t("description")}
               </p>
             </span>
           </div>
@@ -60,10 +63,10 @@ const page = () => {
 
       <section className="bg-gray-200/70 py-20 xl:-mt-32 px-7 2xl:px-36 pb-16 bg-">
         <select className="border px-5 w-72 py-2 bg-white outline-none">
-          <option>All industries</option>
-          <option>Business Services</option>
-          <option>Financial Services</option>
-          <option>Education</option>
+          <option> {t("all_industries")}</option>
+          <option> {t("business_services")}</option>
+          <option> {t("financial_services")}</option>
+          <option> {t("education")}</option>
         </select>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 py-20">
           {items.map((item) => (

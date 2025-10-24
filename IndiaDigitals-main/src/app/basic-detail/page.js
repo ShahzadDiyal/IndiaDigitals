@@ -1,11 +1,14 @@
 "use client";
 import { useState } from "react";
 import axios from "axios";
+import { useTranslations } from "next-intl";
 
 const page = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
+
+  const t = useTranslations("basicdetail-page");
 
   const handleSubmit = async (e) => {
     setLoading(true);
@@ -48,10 +51,7 @@ const page = () => {
             <a href="/">
               <img className="w-[200px] sm:w-[250px]" src="/logo_img.png" />
             </a>
-            <p className="text-lg text-gray-600">
-              Thanks for your interest. Enter your name and details so we can
-              connect you with one of our team.
-            </p>
+            <p className="text-lg text-gray-600">{t("heading")}</p>
           </div>
           <form
             className="mt-6 flex flex-col  max-w-xl gap-4 z-10"
@@ -59,7 +59,7 @@ const page = () => {
           >
             <div>
               <label htmlFor="name" className="font-normal text-gray-700">
-                Your name
+                {t("your_name_label")}
               </label>
               <input
                 id="name"
@@ -69,7 +69,7 @@ const page = () => {
                 required
                 value={name}
                 className="rounded-sm w-full mt-1  bg-white/5 px-3 py-2.5 outline-none text-black border border-gray-400/80 text-sm"
-                placeholder="Name"
+                placeholder={t("name_placeholder")}
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
@@ -78,7 +78,7 @@ const page = () => {
                 htmlFor="email-address"
                 className="font-normal text-gray-700"
               >
-                Your work email
+                {t("your_email_label")}
               </label>
               <input
                 id="email-address"
@@ -88,13 +88,13 @@ const page = () => {
                 required
                 value={email}
                 className="rounded-sm w-full bg-white/5 mt-1 px-3.5 py-2.5 outline-none text-black border border-gray-400/80  text-sm "
-                placeholder="Email"
+                placeholder={t("email_placeholder")}
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className="">
               <h3 className="font-normal text-gray-700 mb-3">
-                Select your service
+                {t("select_service_label")}
               </h3>
               <div className="flex md:flex-row flex-col justify-between">
                 <span className="flex items-center">
@@ -108,7 +108,7 @@ const page = () => {
                     htmlFor="checkbox1"
                     className="font-normal text-gray-700 text-md"
                   >
-                    Software Development
+                    {t("service_software_development")}
                   </label>
                 </span>
 
@@ -123,7 +123,7 @@ const page = () => {
                     htmlFor="checkbox1"
                     className="font-normal text-gray-700 text-md"
                   >
-                    Cloud Solutons
+                    {t("service_cloud_solutions")}
                   </label>
                 </span>
                 <span className="flex items-center">
@@ -137,18 +137,19 @@ const page = () => {
                     htmlFor="checkbox1"
                     className="font-normal text-gray-700 text-md"
                   >
-                    Automation Services
+                    {t("service_automation_services")}
                   </label>
                 </span>
               </div>
             </div>
             <div>
               <label htmlFor="datetime" className="font-normal text-gray-700">
-                Book Slot
+                {t("book_slot_label")}
               </label>
               <input
                 id="datetime"
                 type="datetime-local"
+                placeholder={t("date_placeholder")}
                 className="rounded-sm w-full mt-1  bg-white/5 px-3 py-2.5 outline-none text-black border border-gray-400/80 text-sm"
               />
             </div>
@@ -157,7 +158,7 @@ const page = () => {
                 htmlFor="email-address"
                 className="font-normal text-gray-700"
               >
-                How can we help?
+                {t("help_label")}
               </label>
               <textarea
                 id="email-address"
@@ -167,7 +168,7 @@ const page = () => {
                 required
                 value={email}
                 className="rounded-sm w-full mt-1  h-24 bg-white/5 px-3.5 py-2.5 outline-none text-black border border-gray-400/80 text-sm "
-                placeholder="Tell us how we can help."
+                placeholder={t("help_placeholder")}
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
@@ -185,17 +186,9 @@ const page = () => {
                   ></div>
                 ) : (
                   <>
-                    {"Get started"}&nbsp;&nbsp;&nbsp;
-                    <svg
-                      width="24"
-                      height="24"
-                      class="transition-colors duration-300 w-6 h-6"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M3 13L17.17 13L13.59 16.59L15 18L21 12L15 6L13.59 7.41L17.17 11L3 11L3 13Z"></path>
-                    </svg>
+                    {t("button_text")} &nbsp;&nbsp;&nbsp;
+                    <span className="rtl:inline ltr:hidden">←</span>
+                    <span className="ltr:inline rtl:hidden">→</span>
                   </>
                 )}
               </button>

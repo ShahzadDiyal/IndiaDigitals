@@ -1,3 +1,5 @@
+"use client";
+import { useTranslations } from "next-intl";
 import BreadCrumb from "@/components/BreadCrumb";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
@@ -6,14 +8,15 @@ import CaseStudiesHero from "@/components/clients/CaseStudiesPageTemplate";
 import React from "react";
 
 const page = () => {
+   const t = useTranslations("forcepoint-page");
   return (
     <>
       <Navbar />
       <BreadCrumb currentPage="Forcepoint" />
 
       <CaseStudiesHero
-        page_title="Forcepoint case study"
-        page_heading="Smart video solutions that safeguard your organization."
+        page_title="page_title"
+        page_heading="page_heading"
         page_img="/forcepoint.png"
       />
 
@@ -21,14 +24,14 @@ const page = () => {
         <div className="w-[240px]">
           <div className="mb-2">
             <h3 className="uppercase text-[0.70rem] mb-2 font-semibold tracking-wider">
-              Industry
+              {t("industry")}
             </h3>
-            <span className="text-[0.85rem]">Internet & Technology</span>
+            <span className="text-[0.85rem]">{t("industry_name")}</span>
           </div>
           <hr />
           <div className="mt-4">
             <h3 className="uppercase text-[0.70rem] mb-4 font-semibold tracking-wider">
-              Technology Used
+              {t("technology_used")}
             </h3>
             <div className="flex flex-wrap gap-2 mb-4">
               <span className="text-[0.80rem] bg-gray-800/70 p-1 rounded-xl text-white">
@@ -46,43 +49,30 @@ const page = () => {
         </div>
 
         <div className="w-[60%]">
-          <h1 className="text-4xl font-medium">The Challenge</h1>
+          <h1 className="text-4xl font-medium">{t("title1")}</h1>
           <h2 className="text-3xl my-6">
-            To Enable Nuclear Engineers to Monitor Systems from Anywhere
+            {t("subtitle1")}
           </h2>
           <p className="text-lg my-6">
-            Rolls Royce is a pioneer in engineering cutting-edge technologies
-            that deliver clean, safe, and competitive solutions for the global
-            power industry. The nuclear division provides power companies with a
-            competitive edge through data-analytics, engineering, and support
-            services.
+            {t("paragraph1")}
           </p>
           <p className="text-lg my-6">
-            In 2016, Rolls Royce presented its Safety Data Sheet (SDS) website
-            at the Nuclear Information Technology Strategic Leadership (NITSL)
-            conference.
+           {t("paragraph2")}
           </p>
           <p className="text-lg my-6">
-            To remain on the cutting-edge, Rolls Royce needed to deliver these
-            same data, alerts, and alarms to those outside the control room,
-            safely and in real-time. After assessing their challenge, the
-            solution was clear to BairesDev. They needed a mobile app.
+           {t("paragraph3")}
           </p>
           <img
             className="w-full my-8 shadow-lg rounded-lg"
             src="https://www.bairesdev.com/_next/image/?url=https%3A%2F%2Fbairesdev.mo.cloudinary.net%2Fcoresite%2Fcase-studies%2Flaptop3-1-scaled.jpg&w=1080&q=75"
             alt="forcepoint_case_study"
           />
-          <h1 className="text-4xl font-medium mt-20">The Solution</h1>
+          <h1 className="text-4xl font-medium mt-20">{t("title2")}</h1>
           <h2 className="text-3xl my-6">
-            To Enable Nuclear Engineers to Monitor Systems from Anywhere
+             {t("subtitle2")}
           </h2>
           <p className="text-lg my-6">
-            Rolls Royce is a pioneer in engineering cutting-edge technologies
-            that deliver clean, safe, and competitive solutions for the global
-            power industry. The nuclear division provides power companies with a
-            competitive edge through data-analytics, engineering, and support
-            services.
+             {t("paragraph4")}
           </p>
           <img
             className="w-full my-8 shadow-lg rounded-lg"

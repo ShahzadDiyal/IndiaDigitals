@@ -26,11 +26,12 @@ export default function LocaleWrapper({ children }) {
       {children}
 
       <button
-        onClick={toggleLocale}
-        className="fixed bottom-5 right-5 px-4 py-2 bg-blue-600 text-white rounded-full shadow-lg"
-      >
-        {locale === "en" ? "AR" : "EN"}
-      </button>
+  onClick={toggleLocale}
+  className="fixed bottom-5 left-1/2 transform -translate-x-1/2 px-6 py-4 bg-blue-600 text-white rounded-full shadow-lg"
+>
+  {locale === "en" ? "العربية (AR)" : "English (EN)"}
+</button>
+
     </LocaleProvider>
   );
 }

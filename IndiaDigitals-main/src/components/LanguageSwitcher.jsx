@@ -20,7 +20,7 @@ export default function LanguageSwitcher() {
   return (
     <button
       onClick={handleToggle}
-      className="fixed bottom-6 right-6 z-50 bg-orange-500 text-white px-5 py-2 rounded-full shadow-lg hover:bg-orange-600 transition-all"
+      className="fixed bottom-6 left-6 z-50 bg-orange-500 text-white px-5 py-2 rounded-full shadow-lg hover:bg-orange-600 transition-all"
     >
         {locale === "en" ? "العربية (AR)" : "English (EN)"}
     </button>

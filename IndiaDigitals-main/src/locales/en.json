@@ -81,9 +81,8 @@
     },
     "blogSection": {
         "heading": "Our latest insights.",
-  "description": "Over 1,100 articles on technology and talent",
-    "cardTitle": "How Citizen Developers Can Transform Your Company"
-
+        "description": "Over 1,100 articles on technology and talent",
+        "cardTitle": "How Citizen Developers Can Transform Your Company"
     },
     "navbar": {
         "services": "Services",
@@ -233,5 +232,49 @@
     "solutions-page": {
         "softwareDevelopmentSolutions": "SOFTWARE DEVELOPMENT SOLUTIONS",
         "tapIntoTechSolutions": "Tap into our end-to-end tech solutions."
+    },
+    "client-page": {
+        "heading": "OUR CLIENTS",
+        "subheading1": "Over 10 Years of ",
+        "subheading2": "Over Delivering.",
+        "description": "500+ active clients with an average relationship of over 3 years. And a 96% retention rate.",
+        "all_industries": "All industries",
+        "business_services": "Business Services",
+        "financial_services": "Financial Services",
+        "education": "Education"
+    },
+    "forcepoint-page": {
+        "page_title": "Forcepoint case study",
+  "page_heading": "Smart video solutions that safeguard your organization.",
+        "industry": "Industry",
+  "industry_name": "Internet & Technology",
+  "technology_used": "Technology Used",
+
+  "title1": "The Challenge",
+    "subtitle1": "To Enable Nuclear Engineers to Monitor Systems from Anywhere",
+    "paragraph1": "Rolls Royce is a pioneer in engineering cutting-edge technologies that deliver clean, safe, and competitive solutions for the global power industry. The nuclear division provides power companies with a competitive edge through data-analytics, engineering, and support services.",
+    "paragraph2": "In 2016, Rolls Royce presented its Safety Data Sheet (SDS) website at the Nuclear Information Technology Strategic Leadership (NITSL) conference.",
+    "paragraph3": "To remain on the cutting-edge, Rolls Royce needed to deliver these same data, alerts, and alarms to those outside the control room, safely and in real-time. After assessing their challenge, the solution was clear to BairesDev. They needed a mobile app.",
+    "title2": "The Solution",
+    "subtitle2": "To Enable Nuclear Engineers to Monitor Systems from Anywhere",
+    "paragraph4": "Rolls Royce is a pioneer in engineering cutting-edge technologies that deliver clean, safe, and competitive solutions for the global power industry. The nuclear division provides power companies with a competitive edge through data-analytics, engineering, and support services."    ,
+    "text": "Facing similar challenges to ForcePoint? See how we can help.",
+    "button": "Schedule a Call"
+},
+    "basicdetail-page": {
+        "heading": "Thanks for your interest. Enter your name and details so we can connect you with one of our team.",
+        "your_name_label": "Your name",
+        "name_placeholder": "Name",
+        "your_email_label": "Your work email",
+        "email_placeholder": "Email",
+        "select_service_label": "Select your service",
+        "service_software_development": "Software Development",
+        "service_cloud_solutions": "Cloud Solutions",
+        "service_automation_services": "Automation Services",
+        "book_slot_label": "Book Slot",
+        "date_placeholder": "mm/dd/yyyy --:-- --",
+        "help_label": "How can we help?",
+        "help_placeholder": "Tell us how we can help.",
+        "button_text": "Get started "
     }
 }
