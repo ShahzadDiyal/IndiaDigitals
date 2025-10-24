@@ -7,6 +7,39 @@
         "description2": "with experience in 100+ technologies.",
         "scheduleacall": "Schedule A Call"
     },
+    "home-page": {
+        "trustedBy1": "500+ companies rely",
+        "trustedBy2": "on our",
+        "trustedByHighlight": "top 1% talent",
+        "trustedBy3": "to scale their dev teams",
+        "fromConcept": "From Concept to Completion:",
+        "fullStackExpertise": "Our Full-Stack Expertise.",
+        "everythingWeDo": "Every thing we do ",
+        "asfeatured": "As featured in",
+        "featuredQuote": "“In 2022, DH Solutions added 227 clients just in the U.S. alone and currently has 445 clients worldwide across over 100 industries, from Fortune 500 companies to startups”",
+        "techStackHeading": "Yes. We cover your tech stack",
+        "techStack-p1": "Our 4,000+ team has expertise in almost every ",
+        "techStack-p2": "programming language.",
+        "allTechnologies": "All Technologies we work with",
+        "services": {
+            "customSoftware": {
+                "heading": "Custom Software Development",
+                "description": "Create custom software tailored for your unique needs, including front-end, and core back-end technology."
+            },
+            "mobileApp": {
+                "heading": "Mobile App Development",
+                "description": "Create custom software tailored for your unique needs, includin front-end, and core back-end technology."
+            },
+            "webApp": {
+                "heading": "Web App Development",
+                "description": "Create custom web applications designed to meet your specific requirements, including front-end, and core back-end technology."
+            },
+            "uxUi": {
+                "heading": "UX/UI Design",
+                "description": "Create custom software tailored for your unique needs, including front-end, and core back-end technology."
+            }
+        }
+    },
     "navbar": {
         "services": "Services",
         "ourclients": "Our Clients",
