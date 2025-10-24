@@ -1,13 +1,18 @@
+"use client";
 import React from "react";
+import { useTranslations } from "next-intl";
+
 
 const Team = () => {
+      const t = useTranslations("teamSection");
+  
   return (
     <div className="mt-28 px-5">
       {/* // heading */}
       <div className="text-4xl md:text-5xl font-medium text-center leading-[53px] py-10">
-        <h1 className="text-black">No need to wonder.</h1>
+        <h1 className="text-black">{t("heading1")}</h1>
         <h1 className="text-black">
-          Working with us is wonderful
+          {t("heading2")}
           <span className="text-orange-500/95">.</span>
         </h1>
       </div>
@@ -32,11 +37,10 @@ const Team = () => {
             </svg>
             <span>
               <h2 className="text-2xl font-bold text-gray-900/90 pb-2">
-                The right people
+               {t("rightPeopleTitle")}
               </h2>
               <p className="text-lg text-gray-900/90">
-                Our rigorous hiring process ensures only rock-solid, skilled
-                candidates make it through.
+                {t("rightPeopleDesc")}
               </p>
             </span>
           </div>
@@ -58,11 +62,10 @@ const Team = () => {
             </svg>
             <span>
               <h2 className="text-2xl font-bold text-gray-900/90 pb-2">
-                The right team
+                 {t("rightTeamTitle")}
               </h2>
               <p className="text-lg text-gray-900/90">
-                Our rigorous hiring process ensures only rock-solid, skilled
-                candidates make it through.
+                {t("rightPeopleDesc")}
               </p>
             </span>
           </div>
@@ -86,11 +89,10 @@ const Team = () => {
             </svg>
             <span>
               <h2 className="text-2xl font-bold text-gray-900/90 pb-2">
-                The right place
+                {t("rightPlaceTitle")}
               </h2>
               <p className="text-lg text-gray-900/90">
-                Our rigorous hiring process ensures only rock-solid, skilled
-                candidates make it through.
+                {t("rightPlaceDesc")}
               </p>
             </span>
           </div>
@@ -112,11 +114,10 @@ const Team = () => {
             </svg>
             <span>
               <h2 className="text-2xl font-bold text-gray-900/90 pb-2">
-                The right time
+                 {t("rightTimeTitle")}
               </h2>
               <p className="text-lg text-gray-900/90">
-                Our rigorous hiring process ensures only rock-solid, skilled
-                candidates make it through.
+                {t("rightTimeDesc")}
               </p>
             </span>
           </div>

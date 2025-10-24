@@ -39,18 +39,52 @@
                 "description": "Create custom software tailored for your unique needs, including front-end, and core back-end technology."
             }
         }
-        
     },
     "bgCaseStudy": {
-            "headline": "We've stopped counting.",
-            "brandsCount": "Over 500 brands count on us.",
-            "projectsCount": "1,200+ projects executed successfully and an average relationship of over 3 years.",
-            "highlight": "Our greatest hits ",
-            "crouselCard1": "Repeat Business is the best testament to a team’s ability to perform, and I have no hesitation in hiring them again. BairesDev’s pleasant collaboration style and high-level acumen rapidly catalyzed significant momentum towards achieving our objectives.",
-            "heading": "Brad Mabry",
-            "paragraph": "Product Manager at Rolls Royce"
+        "headline": "We've stopped counting.",
+        "brandsCount": "Over 500 brands count on us.",
+        "projectsCount": "1,200+ projects executed successfully and an average relationship of over 3 years.",
+        "highlight": "Our greatest hits ",
+        "crouselCard1": "Repeat Business is the best testament to a team’s ability to perform, and I have no hesitation in hiring them again. BairesDev’s pleasant collaboration style and high-level acumen rapidly catalyzed significant momentum towards achieving our objectives.",
+        "heading": "Brad Mabry",
+        "paragraph": "Product Manager at Rolls Royce"
+    },
+    "excellenceSection": {
+        "heading": "Excellence.",
+        "paragraph1": "Our minimum bar for client delivery.",
+        "paragraph2": "Over 30 awards, accolades, and achievements showcase our quality and commitment to client success.",
+        "button": "Our trophy cabinet",
+        "project": "Project",
+        "delivered": "Delivered",
+        "industry": "Industry",
+        "sector": "Sector",
+        "clutch": "Clutch",
+        "client_rating": "Client Rating",
+        "achievement_customer_satisfaction_2022": "Achievement in Customer Satisfaction 2022",
+        "fastest_growing_companies_2022": "India's Fastest Growing Companies 2022",
+        "top_100_global_outsourcing_2023": "Top 100 Global Outsourcing Providers and Advisors 2023",
+        "it_service_provider_2022": "IT Service Provider of the Year 2022",
+        "excellence_customer_service_2022": "Excellence in Customer Service 2022",
+        "best_agile_project_2022": "Best Agile Project 2022"
+    },
+    "teamSection": {
+        "heading1": "No need to wonder.",
+        "heading2": "Working with us is wonderful",
+        "rightPeopleTitle": "The right people",
+        "rightPeopleDesc": "Our rigorous hiring process ensures only rock-solid, skilled candidates make it through.",
+        "rightTeamTitle": "The right team",
+        "rightTeamDesc": "Our rigorous hiring process ensures only rock-solid, skilled candidates make it through.",
+        "rightPlaceTitle": "The right place",
+        "rightPlaceDesc": "Our rigorous hiring process ensures only rock-solid, skilled candidates make it through.",
+        "rightTimeTitle": "The right time",
+        "rightTimeDesc": "Our rigorous hiring process ensures only rock-solid, skilled candidates make it through."
+    },
+    "blogSection": {
+        "heading": "Our latest insights.",
+  "description": "Over 1,100 articles on technology and talent",
+    "cardTitle": "How Citizen Developers Can Transform Your Company"
 
-        },
+    },
     "navbar": {
         "services": "Services",
         "ourclients": "Our Clients",

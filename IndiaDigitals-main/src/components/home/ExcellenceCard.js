@@ -1,4 +1,9 @@
+"use client";
+import { useTranslations } from "next-intl";
+
 const ExcellenceCard = ({ mTop, cardStyle }) => {
+      const t = useTranslations("excellenceSection");
+  
   return (
     <div
       className={` bg-gray-900 ${
@@ -10,27 +15,18 @@ const ExcellenceCard = ({ mTop, cardStyle }) => {
       <div className="flex flex-col gap-2 sm:gap-14 xl:gap-28">
         <span className="flex flex-col gap-5">
           <h1 className="text-4xl sm:text-5xl font-medium text-white leading-[40px] sm:leading-[60px]">
-            <span className="text-orange-500/95">Excellence.</span>
-            <br /> Our minimum bar for client delivery.
+            <span className="text-orange-500/95"> {t("heading")}</span>
+            <br /> {t("paragraph1")}
           </h1>
           <p className="custom-text-color-excellence text-lg sm:text-xl">
-            Over 30 awards, accolades, and achievements showcase our quality and
-            commitment to client success.
+           {t("paragraph2")}
           </p>
         </span>
         <a className=" text-md my-14 md:my-0 font-medium gap-2 w-fit border-b-2  border-orange-500/95 pb-3 pr-6">
           <span className="h-full inline-flex cursor-pointer custom-hover-translate text-orange-500/95 text-lg">
-            Our trophy cabinet
-            <svg
-              width="24"
-              height="24"
-              className="transition-colors duration-300 w-6 h-6"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M3 13L17.17 13L13.59 16.59L15 18L21 12L15 6L13.59 7.41L17.17 11L3 11L3 13Z"></path>
-            </svg>
+             {t("button")}
+            <span className="rtl:inline ltr:hidden">←</span>
+                      <span className="ltr:inline rtl:hidden">→</span>
           </span>
         </a>
       </div>
@@ -64,9 +60,9 @@ const ExcellenceCard = ({ mTop, cardStyle }) => {
             <span className="absolute translate-x-11 translate-y-16 ">
               <h1 className="text-3xl md:text-5xl font-medium"> 1200+</h1>
               <p className="text-lg font-semibold">
-                project
+                 {t("project")}
                 <br />
-                delivered
+                 {t("delivered")}
               </p>
             </span>
           </div>
@@ -97,9 +93,9 @@ const ExcellenceCard = ({ mTop, cardStyle }) => {
             <span className="absolute translate-x-16 translate-y-16 ">
               <h1 className="text-3xl md:text-5xl font-medium"> 100+</h1>
               <p className="text-lg font-semibold">
-                industry
+                {t("industry")}
                 <br />
-                sector
+                {t("sector")}
               </p>
             </span>
           </div>
@@ -128,9 +124,9 @@ const ExcellenceCard = ({ mTop, cardStyle }) => {
               </g>
             </svg>
             <span className="absolute translate-x-14 translate-y-16 ">
-              <p className="text-lg font-semibold">Clutch</p>
+              <p className="text-lg font-semibold">{t("clutch")}</p>
               <h1 className="text-3xl md:text-5xl font-medium"> 4.9/5</h1>
-              <p className="text-lg font-semibold">client rating</p>
+              <p className="text-lg font-semibold">{t("client_rating")}</p>
             </span>
           </div>
         </div>
@@ -147,7 +143,7 @@ const ExcellenceCard = ({ mTop, cardStyle }) => {
               src="award3.svg"
             />
             <span className="text-lg text-zinc-300 w-[14rem]">
-              Achievement in Customer Satisfaction 2022
+              {t("achievement_customer_satisfaction_2022")}
             </span>
           </span>
           <span className="text-white flex flex-col text-center items-center gap-4">
@@ -161,7 +157,7 @@ const ExcellenceCard = ({ mTop, cardStyle }) => {
               src="award5.svg"
             />
             <span className="text-lg text-zinc-300 w-[14rem]">
-              Top 100 Global Outsourcing Providers and Advisors 2023
+              {t("fastest_growing_companies_2022")}
             </span>
           </span>
           <span className="text-white flex flex-col text-center items-center gap-4">
@@ -175,7 +171,7 @@ const ExcellenceCard = ({ mTop, cardStyle }) => {
               src="award2.svg"
             />
             <span className="text-lg text-zinc-300 w-[14rem]">
-              Excellence in Customer Service 2022
+              {t("top_100_global_outsourcing_2023")}
             </span>
           </span>
         </div>
@@ -192,7 +188,7 @@ const ExcellenceCard = ({ mTop, cardStyle }) => {
               src="award6.svg"
             />
             <span className="text-lg text-zinc-300 w-[14rem]">
-              India's Fastest Growing Companies 2022
+               {t("it_service_provider_2022")}
             </span>
           </span>
           <span className="text-white flex flex-col text-center items-center gap-4">
@@ -206,7 +202,7 @@ const ExcellenceCard = ({ mTop, cardStyle }) => {
               src="award5.svg"
             />
             <span className="text-lg text-zinc-300 w-[14rem]">
-              IT Service Provider of the Year 2022
+              {t("excellence_customer_service_2022")}
             </span>
           </span>
 
@@ -221,7 +217,7 @@ const ExcellenceCard = ({ mTop, cardStyle }) => {
               src="award1.svg"
             />
             <span className="text-lg text-zinc-300 w-[14rem]">
-              Best Agile Project 2022
+               {t("best_agile_project_2022")}
             </span>
           </span>
         </div>
