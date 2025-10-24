@@ -39,7 +39,18 @@
                 "description": "Create custom software tailored for your unique needs, including front-end, and core back-end technology."
             }
         }
+        
     },
+    "bgCaseStudy": {
+            "headline": "We've stopped counting.",
+            "brandsCount": "Over 500 brands count on us.",
+            "projectsCount": "1,200+ projects executed successfully and an average relationship of over 3 years.",
+            "highlight": "Our greatest hits ",
+            "crouselCard1": "Repeat Business is the best testament to a team’s ability to perform, and I have no hesitation in hiring them again. BairesDev’s pleasant collaboration style and high-level acumen rapidly catalyzed significant momentum towards achieving our objectives.",
+            "heading": "Brad Mabry",
+            "paragraph": "Product Manager at Rolls Royce"
+
+        },
     "navbar": {
         "services": "Services",
         "ourclients": "Our Clients",
@@ -185,8 +196,8 @@
         "all": "All",
         "quickFilter": "Quick Filter"
     },
-     "solutions-page": {
-         "softwareDevelopmentSolutions": "SOFTWARE DEVELOPMENT SOLUTIONS",
-  "tapIntoTechSolutions": "Tap into our end-to-end tech solutions."
+    "solutions-page": {
+        "softwareDevelopmentSolutions": "SOFTWARE DEVELOPMENT SOLUTIONS",
+        "tapIntoTechSolutions": "Tap into our end-to-end tech solutions."
     }
 }
