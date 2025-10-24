@@ -7,6 +7,27 @@
         "description2": "with experience in 100+ technologies.",
         "scheduleacall": "Schedule A Call"
     },
+    "hero-section2": {
+        "heading1": "Scale your software",
+        "heading2": "development efforts.",
+        "subheading": "Effortlessly.",
+        "description1": "We deliver high-quality software with",
+        "description2": "top-tier nearshore talent.",
+        "button": "Schedule a Call",
+        "stack-section": {
+            "heading1": "What's Your",
+            "heading2": "Stack?",
+            "description": "Leverage over 4,000 software engineers to build your digital products in whatever tech stack you need.",
+            "button": "All technologies we work with "
+        },
+        "projects-section": {
+            "heading1": "Projects successfully delivered",
+            "heading2": "in over 100 industry sectors.",
+            "button1": "All technologies we work with",
+            "description": "Assisted Google in delivering stand-alone and integrated tests to ensure Android TVs lived up to the promise and met user expectations.",
+            "button2": "The full case study "
+        }
+    },
     "home-page": {
         "trustedBy1": "500+ companies rely",
         "trustedBy2": "on our",
@@ -230,8 +251,93 @@
         "quickFilter": "Quick Filter"
     },
     "solutions-page": {
-        "softwareDevelopmentSolutions": "SOFTWARE DEVELOPMENT SOLUTIONS",
-        "tapIntoTechSolutions": "Tap into our end-to-end tech solutions."
+        "heading1": "SOFTWARE DEVELOPMENT SOLUTIONS",
+        "subheading1": "Tap into our end-to-end",
+        "subheading2": "tech solutions.",
+        "heading2": "Software Development & Design",
+        "heading3": "Business & Digital Solutions",
+        "sections": {
+            "custom_software": {
+                "title": "Custom Software Development",
+                "description": "Design and build software around your specific business needs."
+            },
+            "business_digital": {
+                "title": "Business & Digital Solutions",
+                "description": "Design and build software around your specific business needs."
+            },
+            "erp_crm": {
+                "title": "ERP & CRM",
+                "description": "Design and build software around your specific business needs."
+            },
+            "digital_acceleration": {
+                "title": "Digital Acceleration",
+                "description": "Design and build software around your specific business needs."
+            },
+            "custom_dev_repeat": {
+                "title": "Custom Software Development",
+                "description": "Design and build software around your specific business needs."
+            }
+        }
+    },
+    "customSoftware-page": {
+        "heading": "CUSTOM SOFTWARE DEVELOPMENT COMPANY",
+        "subheading1": "Build unique software, tailored to your business needs.",
+        "description": "Access the top 1% of LATAM tech talent within 2 weeks. Create secure, custom solutions to engage users and streamline business operations.",
+        "cta": "Level Up Your Custom Software Development",
+        "custom_software_services": "Best Practices for Custom Software",
+        "subheading2": "We Provide",
+        "heading2": "Best Practices for Custom Software",
+        "subheading3": "Development",
+        "service1": {
+            "title": "Custom Software Development",
+            "description": "Custom software development allows organizations to optimize workflows, enhance productivity, and gain a competitive edge by building technologies aligned with their business objectives. Custom software solutions also provide flexibility and can be adapted to evolving needs."
+        },
+        "service2": {
+            "title": "Enterprise Software Development",
+            "description": "Custom software development allows organizations to optimize workflows, enhance productivity, and gain a competitive edge by building technologies aligned with their business objectives. Custom software solutions also provide flexibility and can be adapted to evolving needs."
+        },
+        "service3": {
+            "title": "Software Product Development",
+            "description": "Custom software development allows organizations to optimize workflows, enhance productivity, and gain a competitive edge by building technologies aligned with their business objectives. Custom software solutions also provide flexibility and can be adapted to evolving needs."
+        },
+        "service4": {
+            "title": "Software Integration Services",
+            "description": "Custom software development allows organizations to optimize workflows, enhance productivity, and gain a competitive edge by building technologies aligned with their business objectives. Custom software solutions also provide flexibility and can be adapted to evolving needs."
+        },
+        "service5": {
+            "title": "Custom Software Development",
+            "description": "Custom software development allows organizations to optimize workflows, enhance productivity, and gain a competitive edge by building technologies aligned with their business objectives. Custom software solutions also provide flexibility and can be adapted to evolving needs."
+        },
+        "service6": {
+            "title": "Custom Software Development",
+            "description": "Custom software development allows organizations to optimize workflows, enhance productivity, and gain a competitive edge by building technologies aligned with their business objectives. Custom software solutions also provide flexibility and can be adapted to evolving needs."
+        },
+        "accordion-h1": "Planning and Requirements",
+        "accordion-h2": "Design and Development",
+        "accordion-h3": "Project Management and Communication",
+        "accordion": {
+            "item1": {
+                "title": "Setting Clear Goals",
+                "description": "Start by defining the project's specific requirements and scope to ensure clarity and focus."
+            },
+            "item2": {
+                "title": "Collaborative Input",
+                "description": "Involve key stakeholders in the requirements gathering process to gather diverse perspectives and needs."
+            },
+            "item3": {
+                "title": "Methodology Selection",
+                "description": "Choose between agile or waterfall development methodologies based on the project's nature and goals."
+            }
+        },
+        "faqs": "FAQs",
+        "faq1": {
+            "question": "How does custom software development differ from off-the-shelf software?",
+            "answer": "Custom software development is designed to meet the needs of a particular user or business, while off-the-shelf software is developed for a broader audience. One of the main advantages of custom solutions is that they are flexible and can fit in with a company's other systems and software, while off-the-shelf solutions are less flexible and not designed with the business in mind."
+        },
+        "faq2": {
+            "question": "What are the benefits of developing custom software?",
+            "answer": "There are many benefits to developing custom software, including personalization, efficiency, and scalability. Custom software developers design and build the systems with your infrastructure and current systems in mind, which means they will integrate seamlessly with your other software. Ultimately, this leads to greater productivity and reliability."
+        }
     },
     "client-page": {
         "heading": "OUR CLIENTS",
@@ -245,22 +351,21 @@
     },
     "forcepoint-page": {
         "page_title": "Forcepoint case study",
-  "page_heading": "Smart video solutions that safeguard your organization.",
+        "page_heading": "Smart video solutions that safeguard your organization.",
         "industry": "Industry",
-  "industry_name": "Internet & Technology",
-  "technology_used": "Technology Used",
-
-  "title1": "The Challenge",
-    "subtitle1": "To Enable Nuclear Engineers to Monitor Systems from Anywhere",
-    "paragraph1": "Rolls Royce is a pioneer in engineering cutting-edge technologies that deliver clean, safe, and competitive solutions for the global power industry. The nuclear division provides power companies with a competitive edge through data-analytics, engineering, and support services.",
-    "paragraph2": "In 2016, Rolls Royce presented its Safety Data Sheet (SDS) website at the Nuclear Information Technology Strategic Leadership (NITSL) conference.",
-    "paragraph3": "To remain on the cutting-edge, Rolls Royce needed to deliver these same data, alerts, and alarms to those outside the control room, safely and in real-time. After assessing their challenge, the solution was clear to BairesDev. They needed a mobile app.",
-    "title2": "The Solution",
-    "subtitle2": "To Enable Nuclear Engineers to Monitor Systems from Anywhere",
-    "paragraph4": "Rolls Royce is a pioneer in engineering cutting-edge technologies that deliver clean, safe, and competitive solutions for the global power industry. The nuclear division provides power companies with a competitive edge through data-analytics, engineering, and support services."    ,
-    "text": "Facing similar challenges to ForcePoint? See how we can help.",
-    "button": "Schedule a Call"
-},
+        "industry_name": "Internet & Technology",
+        "technology_used": "Technology Used",
+        "title1": "The Challenge",
+        "subtitle1": "To Enable Nuclear Engineers to Monitor Systems from Anywhere",
+        "paragraph1": "Rolls Royce is a pioneer in engineering cutting-edge technologies that deliver clean, safe, and competitive solutions for the global power industry. The nuclear division provides power companies with a competitive edge through data-analytics, engineering, and support services.",
+        "paragraph2": "In 2016, Rolls Royce presented its Safety Data Sheet (SDS) website at the Nuclear Information Technology Strategic Leadership (NITSL) conference.",
+        "paragraph3": "To remain on the cutting-edge, Rolls Royce needed to deliver these same data, alerts, and alarms to those outside the control room, safely and in real-time. After assessing their challenge, the solution was clear to BairesDev. They needed a mobile app.",
+        "title2": "The Solution",
+        "subtitle2": "To Enable Nuclear Engineers to Monitor Systems from Anywhere",
+        "paragraph4": "Rolls Royce is a pioneer in engineering cutting-edge technologies that deliver clean, safe, and competitive solutions for the global power industry. The nuclear division provides power companies with a competitive edge through data-analytics, engineering, and support services.",
+        "text": "Facing similar challenges to ForcePoint? See how we can help.",
+        "button": "Schedule a Call"
+    },
     "basicdetail-page": {
         "heading": "Thanks for your interest. Enter your name and details so we can connect you with one of our team.",
         "your_name_label": "Your name",

@@ -1,3 +1,5 @@
+"use client";
+import { useTranslations } from "next-intl";
 import BreadCrumb from "@/components/BreadCrumb";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
@@ -10,6 +12,7 @@ import {
 } from "@/components/ui/accordion";
 
 const page = () => {
+  const t = useTranslations("customSoftware-page");
   return (
     <>
       <Navbar />
@@ -19,21 +22,19 @@ const page = () => {
       />
       <section className=" px-7 xl:px-36 pb-16">
         <div className="text-zinc-500/95 font-bold text-sm mt-12 tracking-widest">
-          CUSTOM SOFTWARE DEVELOPMENT COMPANY
+           {t("heading")}
         </div>
         <div className="my-6 flex w-full ">
-          <div className="flex flex-col gap-4 lg:gap-0 justify-between py-10 lg:pr-20 w-full lg:w-[670px] xl:w-[820px]">
-            <h1 className=" text-gray-900/90 font-medium my-4 text-4xl sm:text-5xl xl:text-6xl">
-              Build unique software, tailored to your business needs.&nbsp;
+          <div className="flex flex-col gap-4 lg:gap-0 justify-between py-10 w-full lg:w-[670px] xl:w-[820px]">
+            <h1 className=" text-gray-900/90 font-medium  text-4xl sm:text-5xl xl:text-6xl">
+               {t("subheading")}&nbsp;
             </h1>
-            <p className=" text-gray-900/70 my-4  text-xl ">
-              Access the top 1% of LATAM tech talent within 2 weeks. Create
-              secure, custom solutions to engage users and streamline business
-              operations.
+            <p className=" text-gray-900/70 my-4 text-xl ">
+                {t("description")}
             </p>
             <a href="/basic-detail" className="w-fit">
               <button className="bg-orange-600/95  text-white text-lg md:text-xl font-medium sm:font-normal px-3 py-2 sm:px-5 sm:py-3 rounded-lg">
-                Level Up Your Custom Software Development
+               {t("cta")}
               </button>
             </a>
           </div>
@@ -50,8 +51,8 @@ const page = () => {
       <section className=" px-7 xl:px-36 pb-16">
         <div>
           <h1 className="text-3xl md:text-5xl mb-10">
-            Custom Software Development Services
-            <br /> We Provide
+            {t("custom_software_services")}
+            <br />  {t("subheading2")}
           </h1>
           <div>
             <div className="flex flex-col md:flex-row gap-20 mb-10">
@@ -70,14 +71,10 @@ const page = () => {
                   </div>
                   <div className="pr-10">
                     <h3 className="text-xl py-3">
-                      Custom Software Development
+                      {t("service1.title")}
                     </h3>
                     <p className="text-md text-gray-900/80">
-                      Custom software development allows organizations to
-                      optimize workflows, enhance productivity, and gain a
-                      competitive edge by building technologies aligned with
-                      their business objectives. Custom software solutions also
-                      provide flexibility and can be adapted to evolving needs.
+                     {t("service1.description")}
                     </p>
                   </div>
                 </div>
@@ -97,14 +94,10 @@ const page = () => {
                   </div>
                   <div className="pr-10">
                     <h3 className="text-xl py-3">
-                      Enterprise Software Development
+                      {t("service2.title")}
                     </h3>
                     <p className="text-md text-gray-900/80">
-                      Custom software development allows organizations to
-                      optimize workflows, enhance productivity, and gain a
-                      competitive edge by building technologies aligned with
-                      their business objectives. Custom software solutions also
-                      provide flexibility and can be adapted to evolving needs.
+                       {t("service2.description")}
                     </p>
                   </div>
                 </div>
@@ -126,14 +119,10 @@ const page = () => {
                   </div>
                   <div className="pr-10">
                     <h3 className="text-xl py-3">
-                      Software Product Development
+                     {t("service3.title")}
                     </h3>
                     <p className="text-md text-gray-900/80">
-                      Custom software development allows organizations to
-                      optimize workflows, enhance productivity, and gain a
-                      competitive edge by building technologies aligned with
-                      their business objectives. Custom software solutions also
-                      provide flexibility and can be adapted to evolving needs.
+                      {t("service3.description")}
                     </p>
                   </div>
                 </div>
@@ -153,14 +142,10 @@ const page = () => {
                   </div>
                   <div className="pr-10">
                     <h3 className="text-xl py-3">
-                      Software Integration Services
+                      {t("service4.title")}
                     </h3>
                     <p className="text-md text-gray-900/80">
-                      Custom software development allows organizations to
-                      optimize workflows, enhance productivity, and gain a
-                      competitive edge by building technologies aligned with
-                      their business objectives. Custom software solutions also
-                      provide flexibility and can be adapted to evolving needs.
+                       {t("service4.description")}
                     </p>
                   </div>
                 </div>
@@ -182,14 +167,10 @@ const page = () => {
                   </div>
                   <div className="pr-10">
                     <h3 className="text-xl py-3">
-                      Custom Software Development
+                     {t("service5.title")}
                     </h3>
                     <p className="text-md text-gray-900/80">
-                      Custom software development allows organizations to
-                      optimize workflows, enhance productivity, and gain a
-                      competitive edge by building technologies aligned with
-                      their business objectives. Custom software solutions also
-                      provide flexibility and can be adapted to evolving needs.
+                       {t("service5.description")}
                     </p>
                   </div>
                 </div>
@@ -209,14 +190,10 @@ const page = () => {
                   </div>
                   <div className="pr-10">
                     <h3 className="text-xl py-3">
-                      Custom Software Development
+                      {t("service6.title")}
                     </h3>
                     <p className="text-md text-gray-900/80">
-                      Custom software development allows organizations to
-                      optimize workflows, enhance productivity, and gain a
-                      competitive edge by building technologies aligned with
-                      their business objectives. Custom software solutions also
-                      provide flexibility and can be adapted to evolving needs.
+                       {t("service6.description")}
                     </p>
                   </div>
                 </div>
@@ -228,90 +205,81 @@ const page = () => {
 
       <section className=" px-7 xl:px-36 pb-16">
         <h1 className="text-3xl md:text-5xl mb-10">
-          Best Practices for Custom Software <br />
-          Development
+           {t("heading2")}<br />
+            {t("subheading3")}
         </h1>
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1">
             <AccordionTrigger className="text-xl md:text-3xl font-normal text-gray-900/80 hover:underline hover:text-orange-500/95 ">
-              Planning and Requirements
+              {t("accordion-h1")}
             </AccordionTrigger>
             <AccordionContent className="flex flex-wrap p-3 justify-between mt-3 ">
               <div className="lg:w-[47%] mb-4">
-                <h3 className="text-xl">Setting Clear Goals</h3>
+                <h3 className="text-xl">{t("accordion.item1.title")}</h3>
                 <p className="text-[16px] text-gray-900/80 py-3">
-                  Start by defining the project's specific requirements and
-                  scope to ensure clarity and focus.
+                  {t("accordion.item1.description")}
                 </p>
               </div>
               <div className="lg:w-[47%] mb-4">
-                <h3 className="text-xl">Collaborative Input</h3>
+                <h3 className="text-xl">{t("accordion.item2.title")}</h3>
                 <p className="text-[16px] text-gray-900/80 py-3">
-                  Involve key stakeholders in the requirements gathering process
-                  to gather diverse perspectives and needs.
+                                   {t("accordion.item2.description")}
                 </p>
               </div>
               <div className="lg:w-[47%] mb-4">
-                <h3 className="text-xl">Methodology Selection</h3>
+                <h3 className="text-xl">{t("accordion.item3.title")}</h3>
                 <p className="text-[16px] text-gray-900/80 py-3">
-                  Choose between agile or waterfall development methodologies
-                  based on the project's nature and goals.
+                 {t("accordion.item3.description")}
                 </p>
               </div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
             <AccordionTrigger className="text-xl md:text-3xl font-normal text-gray-900/80">
-              Design and Development
+              {t("accordion-h2")}
             </AccordionTrigger>
-            <AccordionContent className="flex flex-wrap p-3 justify-between mt-3">
+            <AccordionContent className="flex flex-wrap p-3 justify-between mt-3 ">
               <div className="lg:w-[47%] mb-4">
-                <h3 className="text-xl">Setting Clear Goals</h3>
+                <h3 className="text-xl">{t("accordion.item1.title")}</h3>
                 <p className="text-[16px] text-gray-900/80 py-3">
-                  Start by defining the project's specific requirements and
-                  scope to ensure clarity and focus.
+                  {t("accordion.item1.description")}
                 </p>
               </div>
               <div className="lg:w-[47%] mb-4">
-                <h3 className="text-xl">Collaborative Input</h3>
+                <h3 className="text-xl">{t("accordion.item2.title")}</h3>
                 <p className="text-[16px] text-gray-900/80 py-3">
-                  Involve key stakeholders in the requirements gathering process
-                  to gather diverse perspectives and needs.
+                                   {t("accordion.item2.description")}
                 </p>
               </div>
               <div className="lg:w-[47%] mb-4">
-                <h3 className="text-xl">Methodology Selection</h3>
+                <h3 className="text-xl">{t("accordion.item3.title")}</h3>
                 <p className="text-[16px] text-gray-900/80 py-3">
-                  Choose between agile or waterfall development methodologies
-                  based on the project's nature and goals.
+                 {t("accordion.item3.description")}
                 </p>
               </div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
             <AccordionTrigger className="text-xl md:text-3xl font-normal text-gray-900/80 text-left">
-              Project Management and Communication
+             {t("accordion-h3")}
             </AccordionTrigger>
-            <AccordionContent className="flex flex-wrap p-3 justify-between mt-3">
+            <AccordionContent className="flex flex-wrap p-3 justify-between mt-3 ">
               <div className="lg:w-[47%] mb-4">
-                <h3 className="text-xl">Setting Clear Goals</h3>
+                <h3 className="text-xl">{t("accordion.item1.title")}</h3>
                 <p className="text-[16px] text-gray-900/80 py-3">
-                  Start by defining the project's specific requirements and
-                  scope to ensure clarity and focus.
+                  {t("accordion.item1.description")}
                 </p>
               </div>
               <div className="lg:w-[47%] mb-4">
-                <h3 className="text-xl">Collaborative Input</h3>
+                <h3 className="text-xl">{t("accordion.item2.title")}</h3>
                 <p className="text-[16px] text-gray-900/80 py-3">
-                  Involve key stakeholders in the requirements gathering process
-                  to gather diverse perspectives and needs.
+                                   {t("accordion.item2.description")}
                 </p>
               </div>
               <div className="lg:w-[47%] mb-4">
-                <h3 className="text-xl">Methodology Selection</h3>
+                <h3 className="text-xl">{t("accordion.item3.title")}</h3>
                 <p className="text-[16px] text-gray-900/80 py-3">
-                  Choose between agile or waterfall development methodologies
-                  based on the project's nature and goals.
+                 {t("accordion.item3.description")}
                 </p>
               </div>
             </AccordionContent>
@@ -320,37 +288,25 @@ const page = () => {
       </section>
 
       <section className="px-7 xl:px-36 pb-16 mb-20">
-        <h1 className="text-3xl md:text-5xl mb-10">FAQs</h1>
+        <h1 className="text-3xl md:text-5xl mb-10">{t("faqs")}</h1>
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1">
             <AccordionTrigger className="text-lg font-normal">
-              How does custom software development differ from off-the-shelf
-              software?
+                {t("faq1.question")}
             </AccordionTrigger>
             <AccordionContent className="text-[16px] text-slate-900/80 p-3">
               <p>
-                Custom software development is designed to meet the needs of a
-                particular user or business, while off-the-shelf software is
-                developed for a broader audience. One of the main advantages of
-                custom solutions is that they are flexible and can fit in with a
-                company's other systems and software, while off-the-shelf
-                solutions are less flexible and not designed with the business
-                in mind.
+                {t("faq1.answer")}
               </p>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
             <AccordionTrigger className="text-lg font-normal">
-              What are the benefits of developing custom software?
+                {t("faq2.question")}
             </AccordionTrigger>
             <AccordionContent className="text-[16px] text-slate-900/80 p-3">
               <p>
-                There are many benefits to developing custom software, including
-                personalization, efficiency, and scalability. Custom software
-                developers design and build the systems with your infrastructure
-                and current systems in mind, which means they will integrate
-                seamlessly with your other software. Ultimately, this leads to
-                greater productivity and reliability.
+                  {t("faq2.answer")}
               </p>
             </AccordionContent>
           </AccordionItem>

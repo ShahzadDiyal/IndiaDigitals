@@ -33,8 +33,6 @@ const Navbar = () => {
   const handleMouseEnterIndustries = () => setIsIndDropdownOpen(true);
   const handleMouseLeaveIndustries = () => setIsIndDropdownOpen(false);
 
-
-
   const [isFixed, setIsFixed] = useState(false);
   const [lastScrollTop, setLastScrollTop] = useState(0);
 
@@ -275,8 +273,7 @@ const Navbar = () => {
                           <a
                             href="/technologies"
                             className="hover:underline cursor-pointer pt-3"
-                            style={{ fontSize: "18px"}}
-                            
+                            style={{ fontSize: "18px" }}
                           >
                             {t(`${key}`)}
                           </a>
@@ -303,7 +300,7 @@ const Navbar = () => {
                           <a
                             href="/solutions"
                             className="hover:underline cursor-pointer"
-                             style={{ fontSize: "18px"}}
+                            style={{ fontSize: "18px" }}
                           >
                             {t(`${key}`)}
                           </a>
@@ -323,7 +320,7 @@ const Navbar = () => {
                           <a
                             href="/solutions"
                             className="hover:underline cursor-pointer"
-                             style={{ fontSize: "18px"}}
+                            style={{ fontSize: "18px" }}
                           >
                             {t(`${key}`)}
                           </a>
@@ -416,7 +413,7 @@ const Navbar = () => {
                     <a
                       href="/technologies"
                       className="hover:underline font-semibold flex items-center gap-2 pt-4 text-xl"
-                      style={{padding:"25px"}}
+                      style={{ padding: "25px" }}
                       dir="auto"
                     >
                       {t("allSolutions")}
@@ -463,19 +460,18 @@ const Navbar = () => {
             )}
           </div>
 
-       
-          
-
           <a className="px-5 text-xl font-bold hover:text-red-500 py-7 ">
             {t("ourWork")}
           </a>
-          <a href="/about" className="px-5 text-xl font-bold hover:text-red-500 py-7 ">
+          <a
+            href="/about"
+            className="px-5 text-xl font-bold hover:text-red-500 py-7 "
+          >
             {t("aboutus")}
           </a>
           <a className="px-5 text-xl font-bold hover:text-red-500 py-7">
             {t("blog")}
-            </a>
-          
+          </a>
 
           <a
             href="/basic-detail"
@@ -484,10 +480,6 @@ const Navbar = () => {
             {t("scheduleacall")}
           </a>
         </div>
-
-
-
-        
 
         <div className="xl:hidden flex items-center">
           <button onClick={toggleMenu} className=" focus:outline-none">

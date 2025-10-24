@@ -3,9 +3,8 @@ import React from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-
 const Expertise = () => {
-    const t = useTranslations("home-page");
+  const t = useTranslations("home-page");
 
   return (
     <div className="relative w-full pt-20 pb-24 ">
@@ -18,7 +17,7 @@ const Expertise = () => {
           <span className="underline decoration-orange-600/95">
             {t("trustedByHighlight")}
           </span>{" "}
-          <br />  {t("trustedBy3")}
+          <br /> {t("trustedBy3")}
           <span className="text-orange-600/95">.</span>
         </div>
         <div className="text-gray-500 hidden md:flex gap-6  items-center font-bold text-4xl  h-[240px]">
@@ -449,16 +448,15 @@ const Expertise = () => {
           <h1 className="text-[2rem] md:text-4xl xl:text-5xl  font-medium leading-[40px] md:leading-[45px] xl:leading-[60px]">
             {t("fromConcept")}
             <br />
-             {t("fullStackExpertise")}
+            {t("fullStackExpertise")}
           </h1>
           <p className=" text-md my-14 md:my-0 font-medium gap-2 w-fit border-b-2  border-slate-800 pb-3 pr-6">
             <span className="h-full inline-flex cursor-pointer custom-hover-translate text-black">
-              <a href="/solutions"> 
-              {t("everythingWeDo")}
-              <span className="rtl:inline ltr:hidden">←</span>
-                      <span className="ltr:inline rtl:hidden">→</span>
-                      </a>
-              
+              <a href="/solutions">
+                {t("everythingWeDo")}
+                <span className="rtl:inline ltr:hidden">←</span>
+                <span className="ltr:inline rtl:hidden">→</span>
+              </a>
             </span>
           </p>
         </div>
@@ -506,10 +504,10 @@ const Expertise = () => {
               />
             </span>
             <h1 className="text-2xl lg:text-3xl font-medium text-black">
-             {t("services.webApp.heading")}
+              {t("services.webApp.heading")}
             </h1>
             <p className="text-lg py-3 text-black">
-               {t("services.webApp.description")}
+              {t("services.webApp.description")}
             </p>
           </div>
         </div>
@@ -550,7 +548,7 @@ const Expertise = () => {
               />
             </span>
             <h1 className="text-2xl lg:text-3xl font-medium text-black">
-               {t("services.uxUi.heading")}
+              {t("services.uxUi.heading")}
             </h1>
             <p className="text-lg py-3 text-black">
               {t("services.uxUi.description")}

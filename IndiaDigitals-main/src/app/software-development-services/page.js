@@ -1,44 +1,51 @@
+"use client";
+import Image from "next/image";
+import { useTranslations, useLocale } from "next-intl";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ExcellenceCard from "@/components/home/ExcellenceCard";
 import Expertise from "@/components/home/Expertise";
-import Image from "next/image";
 import React from "react";
 
 const page = () => {
+  const t = useTranslations("hero-section2");
+  const locale = useLocale();
   return (
     <>
       <Navbar />
       <section className="relative pt-24 sm:pt-0 sm:mt-20 pb-16 md:pb-20  bg-zinc-100 overflow-hidden ">
-        <div className="absolute h-full w-full bg-contain hidden xl:block">
+        <div
+          className={`absolute h-full w-full bg-contain hidden xl:block ${
+            locale === "ar" ? "right-0 transform scale-x-[-1]" : "left-0"
+          }`}
+        >
           <Image
             priority
             height={1000}
             width={1000}
-            className=" h-full w-full object-cover"
+            className="h-full w-full object-cover"
             src="/hero2.avif"
             alt="hero image"
           />
         </div>
         <div className="relative flex flex-col xl:gap-8 gap-7 px-5 sm:px-10 py-7 md:px-14 md:py-14">
           <h1 className="xl:text-7xl md:text-6xl text-5xl font-semibold leading-[50px] md:leading-[60px] xl:leading-[80px] text-black">
-            Scale your software
+            {t("heading1")}
             <br className="md:block sm:hidden block" />
-            development efforts.
+            {t("heading2")}
             <br className="md:block hidden" />
-            <span className="text-orange-600/95 ">Effortlessly.</span>
+            <span className="text-orange-600/95 ">{t("subheading")}</span>
           </h1>
           <p className="md:text-2xl text-xl font-bold text-gray-600">
-            We deliver high-quality software <br /> with top-tier nearshore
-            talent.
+            {t("description1")} <br /> {t("description2")}
           </p>
           <a href="/basic-detail" className="w-fit">
             <button className="bg-orange-600/95  text-white text-xl font-medium sm:font-normal px-3 py-2 sm:px-5 sm:py-3 rounded-lg">
-              Schedule a Call
+              {t("button")}
             </button>
           </a>
         </div>
-        <div className="absolute mt-5 md:mt-1 2xl:-mt-2 2xl:-ml-[380px] 2xl:w-[150%] py-20  bg-white md:py-24 2xl:py-[1100px]  clip-ellipse 2xl:flex  hidden"></div>
+        <div className="absolute left-1/2 -translate-x-1/2 mt-5 md:mt-1 2xl:-mt-2 2xl:w-[150%] py-20 bg-white md:py-24 2xl:py-[1100px] clip-ellipse 2xl:flex hidden"></div>
       </section>
 
       <Expertise />
@@ -47,25 +54,17 @@ const page = () => {
         <div className="flex xl:flex-row flex-col justify-between gap-20">
           <div className="flex flex-col gap-7 ">
             <h1 className="text-5xl font-bold">
-              What's Your <br /> Stack?
+              {t("stack-section.heading1")}
+              <br /> {t("stack-section.heading2")}
             </h1>
             <p className="text-lg text-slate-800/80">
-              Leverage over 4,000 software engineers to build your digital
-              products in whatever tech stack you need.
+              {t("stack-section.description")}
             </p>
             <p className=" text-[1.18rem] my-14 md:my-0 font-medium gap-2 w-fit border-b-2  border-orange-500 pb-3 pr-6">
               <span className="h-full inline-flex cursor-pointer custom-hover-translate text-orange-500">
-                <a href="/technologies"> All technologies we work with</a>
-                <svg
-                  width="24"
-                  height="24"
-                  className="transition-colors duration-300 w-6 h-6"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M3 13L17.17 13L13.59 16.59L15 18L21 12L15 6L13.59 7.41L17.17 11L3 11L3 13Z"></path>
-                </svg>
+                <a href="/technologies">{t("stack-section.button")}</a>
+                <span className="rtl:inline ltr:hidden">←</span>
+                <span className="ltr:inline rtl:hidden">→</span>
               </span>
             </p>
           </div>
@@ -486,22 +485,14 @@ const page = () => {
         >
           <div className="flex justify-between lg:gap-0 gap-10 lg:flex-row flex-col lg:items-end py-14">
             <h1 className="text-4xl md:text-5xl">
-              Projects successfully delivered
-              <br /> in over 100 industry sectors.
+              {t("projects-section.heading1")}
+              <br /> {t("projects-section.heading2")}
             </h1>
             <p className=" text-md md:my-0 font-medium gap-2 border-b-2 w-fit  border-slate-800 pb-3 pr-6">
               <span className="h-full  inline-flex cursor-pointer custom-hover-translate text-black">
-                <a href="/technologies">All technologies we work with</a>
-                <svg
-                  width="24"
-                  height="24"
-                  className="transition-colors duration-300 w-6 h-6"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M3 13L17.17 13L13.59 16.59L15 18L21 12L15 6L13.59 7.41L17.17 11L3 11L3 13Z"></path>
-                </svg>
+                <a href="/technologies">{t("projects-section.button1")}</a>
+                <span className="rtl:inline ltr:hidden">←</span>
+                <span className="ltr:inline rtl:hidden">→</span>
               </span>
             </p>
           </div>
@@ -518,24 +509,14 @@ const page = () => {
                 src="/google.svg"
               />
               <p className="text-lg text-gray-300">
-                Assisted Google in delivering stand-alone and integrated tests
-                to ensure Android TVs lived up to the promise and met user
-                expectations.
+                {t("projects-section.description")}
               </p>
               <div className="flex flex-row-reverse">
                 <p className=" text-md my-14 md:my-0 font-medium gap-2 w-fit border-b-2  border-white pb-3 pr-6">
                   <span className="h-full inline-flex cursor-pointer custom-hover-translate text-white">
-                    <a href="/solutions">The full case study</a>
-                    <svg
-                      width="24"
-                      height="24"
-                      className="transition-colors duration-300 w-6 h-6"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M3 13L17.17 13L13.59 16.59L15 18L21 12L15 6L13.59 7.41L17.17 11L3 11L3 13Z"></path>
-                    </svg>
+                    <a href="/solutions">{t("projects-section.button2")}</a>
+                    <span className="rtl:inline ltr:hidden">←</span>
+                    <span className="ltr:inline rtl:hidden">→</span>
                   </span>
                 </p>
               </div>
