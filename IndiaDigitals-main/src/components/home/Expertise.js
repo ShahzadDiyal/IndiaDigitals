@@ -446,9 +446,10 @@ const Expertise = () => {
       <div className="xl:mt-28 mt-24 xl:px-32 md:px-8 px-5 ">
         <div className="md:flex block justify-between items-end">
           <h1 className="text-[2rem] md:text-4xl xl:text-5xl  font-medium leading-[40px] md:leading-[45px] xl:leading-[60px]">
-            {t("fromConcept")}
-            <br />
             {t("fullStackExpertise")}
+
+            <br />
+            {t("fromConcept")}
           </h1>
           <p className=" text-md my-14 md:my-0 font-medium gap-2 w-fit border-b-2  border-slate-800 pb-3 pr-6">
             <span className="h-full inline-flex cursor-pointer custom-hover-translate text-black">
@@ -465,97 +466,293 @@ const Expertise = () => {
 
       {/*tech card here  */}
 
-      <div className="gap-10 lg:px-10 px-5 md:px-8 xl:px-32  md:mt-14 ">
-        {/* <div className="sm:flex gap-6  max-w-screen-xl m-auto"> */}
-        <div className="lg:flex lg:gap-20">
-          <div className="lg:pr-6">
-            <span>
-              <img
-                className="py-2"
-                alt=""
-                loading="lazy"
-                width="40"
-                height="40"
-                decoding="async"
-                // dataNimg="1"
-                style={{ color: "transparent" }}
-                src="code.svg"
-              />
-            </span>
-            <h1 className="text-2xl lg:text-3xl font-medium text-black">
-              {t("services.customSoftware.heading")}
-            </h1>
-            <p className="text-lg py-3 text-black">
-              {t("services.customSoftware.description")}
-            </p>
-          </div>
-          <div className="lg:pr-6">
-            <span>
-              <img
-                className="py-2"
-                alt=""
-                loading="lazy"
-                width="40"
-                height="40"
-                decoding="async"
-                // dataNimg="1"
-                style={{ color: "transparent" }}
-                src="qa.svg"
-              />
-            </span>
-            <h1 className="text-2xl lg:text-3xl font-medium text-black">
-              {t("services.webApp.heading")}
-            </h1>
-            <p className="text-lg py-3 text-black">
-              {t("services.webApp.description")}
-            </p>
-          </div>
-        </div>
-        <div className="lg:flex lg:gap-20 ">
-          <div className="lg:pr-6">
-            <span>
-              <img
-                className="py-2"
-                alt=""
-                loading="lazy"
-                width="40"
-                height="40"
-                decoding="async"
-                // dataNimg="1"
-                style={{ color: "transparent" }}
-                src="mobile.svg"
-              />
-            </span>
-            <h1 className="text-2xl lg:text-3xl font-medium text-black">
-              {t("services.mobileApp.heading")}
-            </h1>
-            <p className="text-lg py-3 text-black">
-              {t("services.mobileApp.description")}
-            </p>
-          </div>
-          <div className="lg:pr-6">
-            <span className="">
-              <img
-                className="py-2"
-                alt=""
-                loading="lazy"
-                width="40"
-                height="40"
-                decoding="async"
-                // dataNimg="1"
-                style={{ color: "transparent" }}
-                src="ux.svg"
-              />
-            </span>
-            <h1 className="text-2xl lg:text-3xl font-medium text-black">
-              {t("services.uxUi.heading")}
-            </h1>
-            <p className="text-lg py-3 text-black">
-              {t("services.uxUi.description")}
-            </p>
-          </div>
-        </div>
-      </div>
+      <div className="gap-10 lg:px-10 px-5 md:px-8 xl:px-32 md:mt-14 ">
+  {/* The main container is now a GRID:
+    - md:grid-cols-2 (2 columns on tablets/medium screens)
+    - lg:grid-cols-3 (3 columns on desktops/large screens)
+    - gap-10 for spacing between grid items
+  */}
+  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+    
+    {/* ---------------- CARD 1: Custom Software ---------------- */}
+    <div className="lg:pr-6">
+      <span>
+        <img
+          className="py-2"
+          alt=""
+          loading="lazy"
+          width="40"
+          height="40"
+          decoding="async"
+          style={{ color: "transparent" }}
+          src="code.svg"
+        />
+      </span>
+      <h1 className="text-2xl lg:text-3xl font-medium text-black">
+        {t("services.customSoftware.heading")}
+      </h1>
+      <ul className="space-y-2">
+        {(
+          t.raw?.("services.customSoftware.points") ||
+          t("services.customSoftware.points", { returnObjects: true }) ||
+          []
+        ).map((item, index) => (
+          <li key={index} className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+    
+    {/* ---------------- CARD 2: Mobile App ---------------- */}
+    <div className="lg:pr-6">
+      <span>
+        <img
+          className="py-2"
+          alt=""
+          loading="lazy"
+          width="40"
+          height="40"
+          decoding="async"
+          style={{ color: "transparent" }}
+          src="qa.svg"
+        />
+      </span>
+      <h1 className="text-2xl lg:text-3xl font-medium text-black">
+        {t("services.mobileApp.heading")}
+      </h1>
+      <ul className="space-y-2">
+        {(
+          t.raw?.("services.mobileApp.points") ||
+          t("services.mobileApp.points", { returnObjects: true }) ||
+          []
+        ).map((item, index) => (
+          <li key={index} className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+    
+    {/* ---------------- CARD 3: Frontend Dev ---------------- */}
+    <div className="lg:pr-6">
+      <span>
+        <img
+          className="py-2"
+          alt=""
+          loading="lazy"
+          width="40"
+          height="40"
+          decoding="async"
+          style={{ color: "transparent" }}
+          src="mobile.svg"
+        />
+      </span>
+      <h1 className="text-2xl lg:text-3xl font-medium text-black">
+        {t("services.frontendDev.heading")}
+      </h1>
+      <ul className="space-y-2">
+        {(
+          t.raw?.("services.frontendDev.points") ||
+          t("services.frontendDev.points", { returnObjects: true }) ||
+          []
+        ).map((item, index) => (
+          <li key={index} className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+    
+    {/* ---------------- CARD 4: UX/UI (Start of new row in 3-column view) ---------------- */}
+    <div className="lg:pr-6">
+      <span>
+        <img
+          className="py-2"
+          alt=""
+          loading="lazy"
+          width="40"
+          height="40"
+          decoding="async"
+          style={{ color: "transparent" }}
+          src="backend.png"
+        />
+      </span>
+      <h1 className="text-2xl lg:text-3xl font-medium text-black">
+        {t("services.backendDev.heading")}
+      </h1>
+      <ul className="space-y-2">
+        {(
+          t.raw?.("services.backendDev.points") ||
+          t("services.backendDev.points", { returnObjects: true }) ||
+          []
+        ).map((item, index) => (
+          <li key={index} className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+
+
+    <div className="lg:pr-6">
+      <span>
+        <img
+          className="py-2"
+          alt=""
+          loading="lazy"
+          width="40"
+          height="40"
+          decoding="async"
+          style={{ color: "transparent" }}
+          src="ux.svg"
+        />
+      </span>
+      <h1 className="text-2xl lg:text-3xl font-medium text-black">
+        {t("services.uxUi.heading")}
+      </h1>
+      <ul className="space-y-2">
+        {(
+          t.raw?.("services.uxUi.points") ||
+          t("services.uxUi.points", { returnObjects: true }) ||
+          []
+        ).map((item, index) => (
+          <li key={index} className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+    
+    {/* ---------------- Add 5 more cards here to reach 9 total ---------------- */}
+    <div className="lg:pr-6">
+      <span>
+        <img
+          className="py-2"
+          alt=""
+          loading="lazy"
+          width="40"
+          height="40"
+          decoding="async"
+          style={{ color: "transparent" }}
+          src="security.png"
+        />
+      </span>
+      <h1 className="text-2xl lg:text-3xl font-medium text-black">
+        {t("services.cyberSecurity.heading")}
+      </h1>
+      <ul className="space-y-2">
+        {(
+          t.raw?.("services.cyberSecurity.points") ||
+          t("services.cyberSecurity.points", { returnObjects: true }) ||
+          []
+        ).map((item, index) => (
+          <li key={index} className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+    {/* ... CARD 6 ... */}
+     <div className="lg:pr-6">
+      <span>
+        <img
+          className="py-2"
+          alt=""
+          loading="lazy"
+          width="40"
+          height="40"
+          decoding="async"
+          style={{ color: "transparent" }}
+          src="devops.png"
+        />
+      </span>
+      <h1 className="text-2xl lg:text-3xl font-medium text-black">
+        {t("services.devops.heading")}
+      </h1>
+      <ul className="space-y-2">
+        {(
+          t.raw?.("services.devops.points") ||
+          t("services.devops.points", { returnObjects: true }) ||
+          []
+        ).map((item, index) => (
+          <li key={index} className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+    {/* ... CARD 7 ... */}
+    <div className="lg:pr-6">
+      <span>
+        <img
+          className="py-2"
+          alt=""
+          loading="lazy"
+          width="40"
+          height="40"
+          decoding="async"
+          style={{ color: "transparent" }}
+          src="machine-vision.png"
+        />
+      </span>
+      <h1 className="text-2xl lg:text-3xl font-medium text-black">
+        {t("services.computerVision.heading")}
+      </h1>
+      <ul className="space-y-2">
+        {(
+          t.raw?.("services.computerVision.points") ||
+          t("services.computerVision.points", { returnObjects: true }) ||
+          []
+        ).map((item, index) => (
+          <li key={index} className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+    {/* ... CARD 9 ... */}
+    <div className="lg:pr-6">
+      <span>
+        <img
+          className="py-2"
+          alt=""
+          loading="lazy"
+          width="40"
+          height="40"
+          decoding="async"
+          style={{ color: "transparent" }}
+          src="artificial-intelligence.png"
+        />
+      </span>
+      <h1 className="text-2xl lg:text-3xl font-medium text-black">
+        {t("services.aiMl.heading")}
+      </h1>
+      <ul className="space-y-2">
+        {(
+          t.raw?.("services.aiMl.points") ||
+          t("services.aiMl.points", { returnObjects: true }) ||
+          []
+        ).map((item, index) => (
+          <li key={index} className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+    
+  </div> 
+</div>
     </div>
   );
 };

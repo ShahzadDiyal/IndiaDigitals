@@ -280,17 +280,17 @@ const Footer = () => {
               <span className="text-orange-500 font-semibold">
                 IndiaDigitals
               </span>
-              . All rights reserved.
+              {t("copyright")}.
             </p>
             <div className="flex gap-4 mt-2 md:mt-0">
               <a
                 href="/privacy-policy"
                 className="hover:text-orange-400 transition"
               >
-                Privacy Policy
+                {t("privacy_policy")}
               </a>
               <a href="/terms" className="hover:text-orange-400 transition">
-                Terms & Conditions
+                {t("terms_conditions")}
               </a>
             </div>
           </div>

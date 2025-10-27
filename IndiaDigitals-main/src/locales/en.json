@@ -1,7 +1,7 @@
 {
     "hero-section": {
-        "heading1": "Technical Staffing ",
-        "heading2": "Solutions",
+        "heading1": "High-Tech Revolution ",
+        "heading2": "Smart Solutions",
         "subtitle": "Designed for Startups.",
         "description1": "Access 4,000+ timezone aligned software engineers ",
         "description2": "with experience in 100+ technologies.",
@@ -33,8 +33,8 @@
         "trustedBy2": "on our",
         "trustedByHighlight": "top 1% talent",
         "trustedBy3": "to scale their dev teams",
-        "fromConcept": "From Concept to Completion:",
-        "fullStackExpertise": "Our Full-Stack Expertise.",
+        "fromConcept": "Solutions we provide",
+        "fullStackExpertise": "WE MAKE THE SERVICE BETTER.",
         "everythingWeDo": "Every thing we do ",
         "asfeatured": "As featured in",
         "featuredQuote": "“In 2022, DH Solutions added 227 clients just in the U.S. alone and currently has 445 clients worldwide across over 100 industries, from Fortune 500 companies to startups”",
@@ -45,19 +45,113 @@
         "services": {
             "customSoftware": {
                 "heading": "Custom Software Development",
-                "description": "Create custom software tailored for your unique needs, including front-end, and core back-end technology."
+                "points": [
+                    "Tailored Software Solutions",
+                    "Enterprise Resource Planning",
+                    "Customer Relationship Management ",
+                    "E-Commerce Platforms",
+                    "SaaS Development",
+                    "Application Modernization"
+                ]
             },
             "mobileApp": {
-                "heading": "Mobile App Development",
-                "description": "Create custom software tailored for your unique needs, includin front-end, and core back-end technology."
+                "heading": "QA & Testing",
+                "points": [
+                    "Cross-Platform Development",
+                    "Native App Development",
+                    "App Store Optimization",
+                    "User-Centric Design",
+                    "In-App Purchase Integration",
+                    "App Maintenance & Support"
+                ]
             },
-            "webApp": {
-                "heading": "Web App Development",
-                "description": "Create custom web applications designed to meet your specific requirements, including front-end, and core back-end technology."
+            "frontendDev": {
+                "heading": "Frontend Development",
+                "points": [
+                    "Responsive Web Design",
+                    "HTML5 & CSS3",
+                    "JavaScript & TypeScript",
+                    "React & Vue.js",
+                    "UI/UX Prototyping",
+                    "Performance Optimization"
+                ]
+            },
+            "backendDev": {
+                "heading": "Backend Development",
+                "points": [
+                    "API Development & Integration",
+                    "Database Management",
+                    "RESTful & GraphQL Services ",
+                    "User Authentication & Authorization",
+                    "Server-Side Logic & Business Logic",
+                    "Performance Optimization"
+                ]
+            },
+            "cyberSecurity": {
+                "heading": "Cyber Security",
+                "points": [
+                    "Threat Assessment & Risk Analysis",
+                    "Network Security Solutions",
+                    "Vulnerability Management",
+                    "Incident Response Planning",
+                    "Data Encryption & Protection",
+                    "Security Awareness Training"
+                ]
+            },
+            "devops": {
+                "heading": "DevOps Solutions",
+                "points": [
+                    "CI/CD Pipeline Development",
+                    "Infrastructure as Code (IaC)",
+                    "Containerization (Docker, Kubernetes)",
+                    "Monitoring & Logging Solutions",
+                    "Configuration Management",
+                    "Cloud Solutions & Migrations"
+                ]
+            },
+            "aiMl": {
+                "heading": "AI/ML",
+                "points": [
+                    "Predictive Analytics",
+                    "Natural Language Processing",
+                    "Computer Vision",
+                    "Recommendation Systems",
+                    "Automated Machine Learning",
+                    "AI Model Deployment"
+                ]
+            },
+            "qaTesting": {
+                "heading": "AI/ML",
+                "points": [
+                    "Manual & Automated Testing",
+                    "Test Case Development",
+                    "Performance Testing",
+                    "Security Testing",
+                    "User Acceptance Testing",
+                    "Continuous Testing Integration"
+                ]
+            },
+            "computerVision": {
+                "heading": "Computer Vision",
+                "points": [
+                    "Image Processing & Analysis",
+                    "Object Detection & Recognition",
+                    "Facial Recognition Technology",
+                    "Augmented Reality (AR) Solutions",
+                    "Visual Data Mining",
+                    "Video Analytics Solutions"
+                ]
             },
             "uxUi": {
                 "heading": "UX/UI Design",
-                "description": "Create custom software tailored for your unique needs, including front-end, and core back-end technology."
+                "points": [
+                    "Predictive Analytics",
+                    "Natural Language Processing",
+                    "Computer Vision",
+                    "Recommendation Systems",
+                    "Automated Machine Learning",
+                    "AI Model Deployment"
+                ]
             }
         }
     },
@@ -200,6 +294,9 @@
         "allIndustries": "All Industries"
     },
     "footer": {
+        "copyright": " All rights reserved.",
+        "privacy_policy": "Privacy Policy",
+        "terms_conditions": "Terms & Conditions",
         "aboutus": "About Us",
         "methodologies": "Methodologies",
         "technologies": "Technologies",

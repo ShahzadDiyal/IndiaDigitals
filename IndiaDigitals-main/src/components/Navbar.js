@@ -460,7 +460,7 @@ const Navbar = () => {
             )}
           </div>
 
-          <a className="px-5 text-xl font-bold hover:text-red-500 py-7 ">
+          <a  href="/our-work" className="px-5 text-xl font-bold hover:text-red-500 py-7 ">
             {t("ourWork")}
           </a>
           <a
@@ -469,7 +469,7 @@ const Navbar = () => {
           >
             {t("aboutus")}
           </a>
-          <a className="px-5 text-xl font-bold hover:text-red-500 py-7">
+          <a href="/blog"className="px-5 text-xl font-bold hover:text-red-500 py-7">
             {t("blog")}
           </a>
 

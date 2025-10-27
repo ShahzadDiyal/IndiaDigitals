@@ -27,7 +27,7 @@ const Hero = () => {
           <br className="md:block sm:hidden block" />
           {t("heading2")}
           <br className="md:block hidden" />
-          <span className="text-orange-600/95 ">{t("subtitle")}</span>
+          <span className="text-orange-600/95 text-md">{t("subtitle")}</span>
         </h1>
         <p className="md:text-2xl text-xl text-gray-600">
           {t("description1")}
