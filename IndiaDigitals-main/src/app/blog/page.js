@@ -23,7 +23,7 @@ const mockData = [
     imageUrl:
       "https://dhsol.net/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F3.18fa1a7c.png&w=1080&q=75",
     title: "How DH Solutions Can Help You Leverage AI for Growth",
-    authorName: "Pablo Riboldi",
+    authorName: "dh solutions",
     authorAvatar:
       "https://dhsol.net/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F2.30386431.jpg&w=1080&q=75",
     readTime: "8 min read",
@@ -34,7 +34,7 @@ const mockData = [
     imageUrl:
       "https://dhsol.net/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F2.f49f28cf.png&w=1080&q=75",
     title: "Scaling Your Business with DH Solutions' Global Talent",
-    authorName: "Justice Erolin",
+    authorName: "dh solutions",
     authorAvatar:
       "https://dhsol.net/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F2.30386431.jpg&w=1080&q=75",
     readTime: "17 min read",
@@ -45,7 +45,7 @@ const mockData = [
     imageUrl:
       "https://dhsol.net/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F3.18fa1a7c.png&w=1080&q=75",
     title: "How DH Solutions Can Revolutionize Call Centers with AI",
-    authorName: "BairesDev Editorial Team",
+    authorName: "dh solutions",
     authorAvatar:
       "https://dhsol.net/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F2.30386431.jpg&w=1080&q=75",
     readTime: "9 min read",
@@ -56,7 +56,7 @@ const mockData = [
     imageUrl:
       "https://dhsol.net/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F4.706f1ad8.png&w=1080&q=75",
     title: "Emerging IT Companies in the United States: Driving Innovation",
-    authorName: "BairesDev Editorial Team",
+    authorName: "dh solutions",
     authorAvatar:
       "https://dhsol.net/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F2.30386431.jpg&w=1080&q=75",
     readTime: "11 min read",
@@ -67,7 +67,7 @@ const mockData = [
     imageUrl:
       "https://dhsol.net/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F5.3427daf7.png&w=1080&q=75",
     title: "What Are the Top IT Companies in Pakistan?",
-    authorName: "BairesDev Editorial Team",
+    authorName: "dh solutions",
     authorAvatar:
       "https://dhsol.net/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F2.30386431.jpg&w=1080&q=75",
     readTime: "2 min read",
@@ -78,7 +78,7 @@ const mockData = [
     imageUrl:
       "https://dhsol.net/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F6.fadefa3a.png&w=1080&q=75",
     title: "Top IT Companies in the Middle East: Transforming the Tech Landscape",
-    authorName: "BairesDev Editorial Team",
+    authorName: "dh solutions",
     authorAvatar:
       "https://dhsol.net/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F2.30386431.jpg&w=1080&q=75",
     readTime: "15 min read",

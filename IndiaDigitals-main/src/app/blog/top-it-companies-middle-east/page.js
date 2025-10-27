@@ -5,16 +5,16 @@ import Footer from "../../../components/Footer";
 import BreadCrumb from "../../../components/BreadCrumb";
 
 const imageUrl =
-  "https://dhsol.net/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F4.706f1ad8.png&w=1080&q=75";
+  "https://dhsol.net/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F6.fadefa3a.png&w=1080&q=75";
 
 // Mocking useTranslations
 const useTranslations = (namespace) => {
   const translations = {
     blogDetail: {
       title:
-        "Emerging­ IT­ Companies­ in­ the­ United­ States:­ Driving­Innovation",
+        "Top­ IT­ Companies­ in­ the­ Middle­ East:­ Transforming­ the­ Tech­Landscape",
       updatedDate: "OCTOBER 22ND 2025",
-      readTime: "5 MIN READ",
+      readTime: "12 MIN READ",
       mainContent:
         "This is the main body of the blog post. It would contain several paragraphs of detailed text, subheadings, images, and embedded media. The content here is just placeholder text to show the structure. We are focusing on making the header/metadata section match the design exactly.",
     },
@@ -102,203 +102,115 @@ const BlogDetailPage = () => {
               <h2 className="text-3xl font-bold mt-10 mb-4 text-gray-900">
                 Introduction
               </h2>{" "}
-              While tech giants like Microsoft and Google dominate headlines,
-              the U.S. is home to a growing ecosystem of emerging IT companies.
-              These innovators are driving digital transformation with
-              groundbreaking solutions in AI, web development, cloud computing,
-              and more. Among them, DH Solutions LLC leads the charge with a
-              reputation for excellence and innovation.
+              The Middle East has rapidly emerged as a key player in the global
+              technology industry. From AI development to advanced IT
+              infrastructure, the region is home to companies that are reshaping
+              the tech landscape. Among these innovators, DH Solutions LLC
+              stands out as a leader in delivering cutting-edge technology
+              services.
             </div>
             <div>
-              <h2 className="text-3xl font-bold mt-10 mb-4 text-gray-900">
-                1. DH Solutions LLC:
-              </h2>
-              <div>
-                {" "}
-                The Pioneer in IT Solutions Headquarters:{" "}
-                <strong> New York City, NY</strong>
-              </div>
+              
+                <h2 className="text-3xl font-bold mt-10 mb-4 text-gray-900">
+                  1. DH Solutions LLC Headquarters:{" "}
+                  <span className="font-normal">(Dubai, UAE) </span>
+                </h2>
+              
 
               <div>
                 {" "}
                 <strong> Specialties:</strong> AI Development, Web Development,
                 Staff Augmentation
                 <p className="py-2">
-                  DH Solutions LLC is redefining IT services with a commitment
-                  to innovation and client success. They offer a diverse range
-                  of solutions that optimize operations, enhance customer
-                  experiences, and enable global scalability.
+                  DH Solutions LLC is a trailblazer in the IT sector, offering a comprehensive suite of services tailored to the needs of businesses across the Middle East and beyond. Their focus on innovation, scalability, and client satisfaction has made them a trusted partner for organizations seeking digital transformation.
                 </p>
               </div>
 
               <div>
                 <strong className="text-xl font-bold mt-10 mb-[20px] py-1 text-gray-900">
-                  Their standout services include:
+                  Key Offerings:
                 </strong>{" "}
                 <ul>
                   <li>
-                    <strong>+ AI Development: </strong>Advanced tools, chatbots,
-                    and predictive analytics.
+                    <strong>+ AI Development:</strong>Advanced tools, predictive analytics, and AI-powered business solutions.
                   </li>
                   <li>
-                    <strong>+ Web Development:</strong>Responsive and
-                    user-friendly websites tailored to business needs.
+                    <strong>+ Web Development: </strong>Custom, responsive websites and web applications designed to enhance user experiences.
                   </li>
                   <li className="mb-5">
-                    <strong>+ Staff Augmentation:</strong>Providing skilled
-                    professionals to fill talent gaps and accelerate project
-                    timelines.
+                    <strong>+ Staff Augmentation:</strong>Providing skilled IT professionals to bridge talent gaps and accelerate project delivery.
                   </li>
                 </ul>
               </div>
 
               <div>
                 <strong className="text-xl font-bold mt-10 mb-4 py-3 text-gray-900">
-                  Why DH Solutions Leads the Pack:
+                  Why DH Solutions Leads:
                 </strong>{" "}
                 <ul>
                   <li>
-                    <strong>+ Global Reach: </strong> Supporting clients in the
-                    U.S., Europe, and beyond.
+                    <strong>+ </strong> A proven track record of success across multiple industries.
                   </li>
                   <li>
-                    <strong>+ Agile Approach:</strong>Tailored solutions for
-                    evolving business needs.
+                    <strong>+</strong>A proven track record of success across multiple industries.
                   </li>
                   <li>
-                    <strong>+ Innovation-Driven:</strong>Leveraging the latest
-                    technologies for impactful results.
+                    <strong>+ </strong>Expertise in integrating modern technologies for sustainable growth.
                   </li>
                 </ul>
+ 
               </div>
             </div>
-            
             {/* 2 */}
             <div>
-              <h3 className="text-3xl font-bold mt-10 mb-4 text-gray-900">
-                2. Techsmith Solutions Headquarters: (Chicago, IL)
-              </h3>
+               <h2 className="text-3xl font-bold mt-10 mb-4 text-gray-900">
+                  2. Injazat Data Systems Headquarters: {" "}
+                  <span className="font-normal">(Dubai, UAE) </span>
+                </h2>
               <div>
-                <strong>Specialties:</strong> Custom Software Development, Cloud
-                Integration
+                <strong>Specialties:</strong> Managed IT Services, Cloud Computing, Cybersecurity
                 <p className="py-2">
-                  Techsmith Solutions delivers cost-effective software and cloud
-                  solutions for SMEs, ensuring streamlined operations and
-                  enhanced productivity.
+                 Injazat Data Systems is a leader in managed IT services and cloud computing solutions. Their secure and scalable offerings empower businesses to streamline operations and enhance productivity.
                 </p>
               </div>
             </div>
             {/* 3 */}
             <div>
-              <h3 className="text-3xl font-bold mt-10 mb-4 text-gray-900">
-                3. InnovateX Technologies Headquarters: (Austin, TX)
-              </h3>
+              <h2 className="text-3xl font-bold mt-10 mb-4 text-gray-900">
+                 3. Arkan IT Solutions Headquarters: {" "}
+                  <span className="font-normal">(Riyadh, Saudi Arabia) </span>
+                </h2>
               <div>
-                <strong>Specialties:</strong> IoT, Blockchain, and AI
+                <strong>Specialties:</strong> IT Consulting, Software Development, Networking
                 <p className="py-2">
-                  InnovateX Technologies focuses on IoT and blockchain, helping
-                  businesses enhance data security and streamline supply chains
-                  with AI-powered tools.
+                  Arkan IT Solutions delivers tailored IT consulting, software solutions, and enterprise network management services, earning them a strong reputation in the region.
                 </p>
               </div>
             </div>
             {/* 4 */}
             <div>
-              <h3 className="text-3xl font-bold mt-10 mb-4 text-gray-900">
-                4. NexGen IT Solutions Headquarters: (Miami, FL)
-              </h3>
+               <h2 className="text-3xl font-bold mt-10 mb-4 text-gray-900">
+                 4. Gulf IT Innovations (GITI) Headquarters: {" "}
+                  <span className="font-normal">(Manama, Bahrain) </span>
+                </h2>
+              
               <div>
-                <strong>Specialties:</strong> Cybersecurity, Cloud Computing
+                <strong>Specialties:</strong> Mobile App Development, Cloud Solutions, Blockchain
                 <p className="py-2">
-                  NexGen IT Solutions safeguards businesses against digital
-                  threats while optimizing cloud infrastructure for performance
-                  and scalability.
+                  GITI stands out with its expertise in mobile app development and blockchain technology, creating user-friendly applications and innovative blockchain solutions.
                 </p>
               </div>
             </div>
             {/* 5 */}
             <div>
-              <h3 className="text-3xl font-bold mt-10 mb-4 text-gray-900">
-                5. BrightFuture Tech Headquarters: (Denver, CO)
-              </h3>
+              <h2 className="text-3xl font-bold mt-10 mb-4 text-gray-900">
+                5. Omnix International Headquarters: {" "}
+                  <span className="font-normal">(Dubai, UAE) </span>
+                </h2>
               <div>
-                <strong>Specialties:</strong> Web Development, Mobile App Design
+                <strong>Specialties:</strong> Digital Transformation, Cloud Solutions, AI
                 <p className="py-2">
-                  BrightFuture Tech builds intuitive websites and mobile apps,
-                  catering to startups and small businesses with a user-first
-                  design approach.
-                </p>
-              </div>
-            </div>
-            {/* 6 */}
-            <div>
-              <h3 className="text-3xl font-bold mt-10 mb-4 text-gray-900">
-                6. ElevateIT Solutions Headquarters: (Atlanta, GA)
-              </h3>
-              <div>
-                <strong>Specialties:</strong> IT Consulting, Data Analytics
-                <p className="py-2">
-                  ElevateIT Solutions enables data-driven decision-making
-                  through IT consulting and analytics services, driving growth
-                  and efficiency for businesses.
-                </p>
-              </div>
-            </div>
-            {/* 7 */}
-            <div>
-              <h3 className="text-3xl font-bold mt-10 mb-4 text-gray-900">
-                7. QuantumSoft Labs Headquarters: (Seattle, WA)
-              </h3>
-              <div>
-                <strong>Specialties:</strong> Artificial Intelligence, Machine
-                Learning
-                <p className="py-2">
-                  QuantumSoft Labs creates AI solutions for healthcare, finance,
-                  and retail, transforming operations with cutting-edge machine
-                  learning applications.
-                </p>
-              </div>
-            </div>
-            {/* 8 */}
-            <div>
-              <h3 className="text-3xl font-bold mt-10 mb-4 text-gray-900">
-                8. CloudWave Systems Headquarters: (Boston, MA)
-              </h3>
-              <div>
-                <strong>Specialties:</strong> Cloud Migration, DevOps
-                <p className="py-2">
-                  CloudWave Systems offers seamless cloud migration and DevOps
-                  solutions, ensuring minimal downtime and maximum operational
-                  efficiency.
-                </p>
-              </div>
-            </div>
-            {/* 9 */}
-            <div>
-              <h3 className="text-3xl font-bold mt-10 mb-4 text-gray-900">
-                9. VirtualEdge Dynamics Headquarters: (Portland, OR)
-              </h3>
-              <div>
-                <strong>Specialties:</strong> Virtual Reality, Augmented Reality
-                <p className="py-2">
-                  VirtualEdge Dynamics specializes in immersive VR and AR
-                  experiences for industries like gaming, real estate, and
-                  education.
-                </p>
-              </div>
-            </div>
-            {/* 10 */}
-            <div>
-              <h3 className="text-3xl font-bold mt-10 mb-4 text-gray-900">
-                10. Streamline IT Partners Headquarters: (Phoenix, AZ)
-              </h3>
-              <div>
-                <strong>Specialties:</strong> Managed IT Services, Network
-                Optimization
-                <p className="py-2">
-                  Streamline IT Partners provides efficient managed IT services,
-                  enabling businesses to focus on growth while ensuring robust
-                  IT infrastructure.
+                  Omnix International drives modernization with AI solutions, cloud computing, and IT infrastructure services across various industries.
                 </p>
               </div>
             </div>
@@ -307,42 +219,82 @@ const BlogDetailPage = () => {
               alt="ai for call center image here"
               className="w-full h-full object-cover py-3"
             />
-            <strong>Why DH Solutions LLC Stands Out </strong>DH Solutions LLC
-            outshines the competition with its comprehensive service offerings,
-            global perspective, and client-centric approach. From AI-powered
-            tools to expert staff augmentation, DH Solutions combines innovation
-            and execution to deliver transformative results.
+            {/* 6 */}
+            <div>
+              <h2 className="text-3xl font-bold mt-10 mb-4 text-gray-900">
+                6. STC Solutions Headquarters: {" "}
+                  <span className="font-normal">(Riyadh, Saudi Arabia) </span>
+                </h2>
+              <div>
+                <strong>Specialties:</strong> Telecommunications, AI, IoT
+                <p className="py-2">
+                  As a subsidiary of Saudi Telecom Company, STC Solutions offers AI, IoT solutions, and network optimization, leading Saudi Arabia’s digital transformation initiatives.
+                </p>
+              </div>
+            </div>
+            {/* 7 */}
+            <div>
+              <h2 className="text-3xl font-bold mt-10 mb-4 text-gray-900">
+                7. ITQAN Global for Cloud and Digital Computing Systems Headquarters: {" "}
+                  <span className="font-normal">(Abu Dhabi, UAE) </span>
+                </h2>
+              <div>
+                <strong>Specialties:</strong> Cloud Solutions, IT Infrastructure
+                <p className="py-2">
+                 ITQAN provides scalable and reliable cloud-based solutions and enterprise IT infrastructure for businesses across the region.
+                </p>
+              </div>
+            </div>
+            {/* 8 */}
+            <div>
+              <h2 className="text-3xl font-bold mt-10 mb-4 text-gray-900">
+               8. Zaintech Headquarters: {" "}
+                  <span className="font-normal">(Kuwait City, Kuwait) </span>
+                </h2>
+              <div>
+                <strong>Specialties:</strong> Data Analytics, Cybersecurity, Cloud Computing
+                <p className="py-2">
+                  A subsidiary of Zain Group, Zaintech empowers businesses with advanced IT solutions like data analytics and cybersecurity.
+                </p>
+              </div>
+            </div>
+            {/* 9 */}
+            <div>
+              <h2 className="text-3xl font-bold mt-10 mb-4 text-gray-900">
+               9. Algosaibi Information Systems Headquarters:  {" "}
+                  <span className="font-normal">( Al Khobar, Saudi Arabia) </span>
+                </h2>
+              <div>
+                <strong>Specialties:</strong> Enterprise Solutions, Software Development
+                <p className="py-2">
+                  Algosaibi specializes in ERP implementations, CRM solutions, and software development, offering tailored enterprise-grade IT solutions.
+                </p>
+              </div>
+            </div>
+            {/* 10 */}
+            <div>
+              <h2 className="text-3xl font-bold mt-10 mb-4 text-gray-900">
+                10. Hiteknofal Solutions Headquarters:  {" "}
+                  <span className="font-normal">(Cairo, Egypt) </span>
+                </h2>
+              <div>
+                <strong>Specialties:</strong>  IT Consulting, Networking Solutions
+                <p className="py-2">
+                 Hiteknofal Solutions focuses on IT consulting, system integration, and networking solutions to help businesses achieve operational efficiency.
+                </p>
+              </div>
+            </div>
+           
+            <strong>
+              Conclusion: Driving Digital Transformation in the Middle East 
+            </strong>
+            The Middle East is witnessing a digital revolution, with IT companies playing a vital role in reshaping industries. Among these, DH Solutions LLC stands out for its innovative, scalable, and client-focused technology solutions.
+            <br /> As technology continues to shape the region’s future, companies like DH Solutions are paving the way for a more connected, innovative, and sustainable Middle East. Whether it’s AI development, web solutions, or staff augmentation, DH Solutions LLC is your trusted partner for success in the digital age.
+           
             <br />
-            <strong>Conclusion: The Rising Stars of IT in the U.S. </strong>The
-            U.S. is home to a thriving ecosystem of emerging IT companies
-            shaping the future of technology. Leading this revolution is DH
-            Solutions LLC, with its innovative solutions and commitment to
-            excellence. Whether you need AI-driven tools, dynamic web solutions,
-            or expert staff augmentation, DH Solutions LLC is the partner to
-            take your business to the next level. Contact DH Solutions today to
-            thrive in the digital era.
-            <div>
-              <h2 className="text-3xl font-bold mt-10 mb-4 text-gray-900">
-                Conclusion
-              </h2>{" "}
-              AI is transforming call centers into efficient, customer-focused
-              operations. With DH Solutions, your call center can leverage
-              cutting-edge AI to streamline workflows, boost agent efficiency,
-              and elevate customer satisfaction.
-            </div>
-            <div>
-              <h2 className="text-3xl font-bold mt-10 mb-4 text-gray-900">
-                Get Started Today
-              </h2>{" "}
-              Contact DH Solutions to discover how AI can revolutionize your
-              call center and deliver real results. <br />
-              <a>
-                <strong>
-                  tags: AI, call centers, automation, predictive analytics,
-                  customer support{" "}
-                </strong>
-              </a>
-            </div>
+            <strong>
+              tags: <u> IT in the Middle East, DH Solutions, digital transformation </u>
+            </strong>
           </main>
         </div>
       </div>
