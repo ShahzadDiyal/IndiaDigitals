@@ -492,16 +492,30 @@ const Expertise = () => {
         {t("services.customSoftware.heading")}
       </h1>
       <ul className="space-y-2">
-        {(
-          t.raw?.("services.customSoftware.points") ||
-          t("services.customSoftware.points", { returnObjects: true }) ||
-          []
-        ).map((item, index) => (
-          <li key={index} className="flex items-start gap-2">
+        <li className="flex items-start gap-2">
             <span className="text-blue-600 font-bold">+</span>
-            <span>{item}</span>
+            <span>{t("services.customSoftware.point1")}</span>
           </li>
-        ))}
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.customSoftware.point2")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.customSoftware.point3")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.customSoftware.point4")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.customSoftware.point5")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.customSoftware.point6")}</span>
+          </li>
       </ul>
     </div>
     
@@ -523,16 +537,30 @@ const Expertise = () => {
         {t("services.mobileApp.heading")}
       </h1>
       <ul className="space-y-2">
-        {(
-          t.raw?.("services.mobileApp.points") ||
-          t("services.mobileApp.points", { returnObjects: true }) ||
-          []
-        ).map((item, index) => (
-          <li key={index} className="flex items-start gap-2">
+        <li className="flex items-start gap-2">
             <span className="text-blue-600 font-bold">+</span>
-            <span>{item}</span>
+            <span>{t("services.mobileApp.point1")}</span>
           </li>
-        ))}
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.mobileApp.point2")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.mobileApp.point3")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.mobileApp.point4")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.mobileApp.point5")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.mobileApp.point6")}</span>
+          </li>
       </ul>
     </div>
     
@@ -554,16 +582,30 @@ const Expertise = () => {
         {t("services.frontendDev.heading")}
       </h1>
       <ul className="space-y-2">
-        {(
-          t.raw?.("services.frontendDev.points") ||
-          t("services.frontendDev.points", { returnObjects: true }) ||
-          []
-        ).map((item, index) => (
-          <li key={index} className="flex items-start gap-2">
+        <li className="flex items-start gap-2">
             <span className="text-blue-600 font-bold">+</span>
-            <span>{item}</span>
+            <span>{t("services.frontendDev.point1")}</span>
           </li>
-        ))}
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.frontendDev.point2")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.frontendDev.point3")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.frontendDev.point4")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.frontendDev.point5")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.frontendDev.point6")}</span>
+          </li>
       </ul>
     </div>
     
@@ -585,16 +627,30 @@ const Expertise = () => {
         {t("services.backendDev.heading")}
       </h1>
       <ul className="space-y-2">
-        {(
-          t.raw?.("services.backendDev.points") ||
-          t("services.backendDev.points", { returnObjects: true }) ||
-          []
-        ).map((item, index) => (
-          <li key={index} className="flex items-start gap-2">
+        <li className="flex items-start gap-2">
             <span className="text-blue-600 font-bold">+</span>
-            <span>{item}</span>
+            <span>{t("services.backendDev.point1")}</span>
           </li>
-        ))}
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.backendDev.point2")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.backendDev.point3")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.backendDev.point4")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.backendDev.point5")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.backendDev.point6")}</span>
+          </li>
       </ul>
     </div>
 
@@ -617,16 +673,30 @@ const Expertise = () => {
         {t("services.uxUi.heading")}
       </h1>
       <ul className="space-y-2">
-        {(
-          t.raw?.("services.uxUi.points") ||
-          t("services.uxUi.points", { returnObjects: true }) ||
-          []
-        ).map((item, index) => (
-          <li key={index} className="flex items-start gap-2">
+        <li className="flex items-start gap-2">
             <span className="text-blue-600 font-bold">+</span>
-            <span>{item}</span>
+            <span>{t("services.uxUi.point1")}</span>
           </li>
-        ))}
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.uxUi.point2")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.uxUi.point3")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.uxUi.point4")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.uxUi.point5")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.uxUi.point6")}</span>
+          </li>
       </ul>
     </div>
     
@@ -648,16 +718,30 @@ const Expertise = () => {
         {t("services.cyberSecurity.heading")}
       </h1>
       <ul className="space-y-2">
-        {(
-          t.raw?.("services.cyberSecurity.points") ||
-          t("services.cyberSecurity.points", { returnObjects: true }) ||
-          []
-        ).map((item, index) => (
-          <li key={index} className="flex items-start gap-2">
+        <li className="flex items-start gap-2">
             <span className="text-blue-600 font-bold">+</span>
-            <span>{item}</span>
+            <span>{t("services.cyberSecurity.point1")}</span>
           </li>
-        ))}
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.cyberSecurity.point2")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.cyberSecurity.point3")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.cyberSecurity.point4")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.cyberSecurity.point5")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.cyberSecurity.point6")}</span>
+          </li>
       </ul>
     </div>
     {/* ... CARD 6 ... */}
@@ -678,16 +762,30 @@ const Expertise = () => {
         {t("services.devops.heading")}
       </h1>
       <ul className="space-y-2">
-        {(
-          t.raw?.("services.devops.points") ||
-          t("services.devops.points", { returnObjects: true }) ||
-          []
-        ).map((item, index) => (
-          <li key={index} className="flex items-start gap-2">
+        <li className="flex items-start gap-2">
             <span className="text-blue-600 font-bold">+</span>
-            <span>{item}</span>
+            <span>{t("services.devops.point1")}</span>
           </li>
-        ))}
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.devops.point2")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.devops.point3")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.devops.point4")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.devops.point5")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.devops.point6")}</span>
+          </li>
       </ul>
     </div>
     {/* ... CARD 7 ... */}
@@ -708,16 +806,30 @@ const Expertise = () => {
         {t("services.computerVision.heading")}
       </h1>
       <ul className="space-y-2">
-        {(
-          t.raw?.("services.computerVision.points") ||
-          t("services.computerVision.points", { returnObjects: true }) ||
-          []
-        ).map((item, index) => (
-          <li key={index} className="flex items-start gap-2">
+        <li className="flex items-start gap-2">
             <span className="text-blue-600 font-bold">+</span>
-            <span>{item}</span>
+            <span>{t("services.computerVision.point1")}</span>
           </li>
-        ))}
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.computerVision.point2")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.computerVision.point3")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.computerVision.point4")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.computerVision.point5")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.computerVision.point6")}</span>
+          </li>
       </ul>
     </div>
     {/* ... CARD 9 ... */}
@@ -738,16 +850,30 @@ const Expertise = () => {
         {t("services.aiMl.heading")}
       </h1>
       <ul className="space-y-2">
-        {(
-          t.raw?.("services.aiMl.points") ||
-          t("services.aiMl.points", { returnObjects: true }) ||
-          []
-        ).map((item, index) => (
-          <li key={index} className="flex items-start gap-2">
+        <li className="flex items-start gap-2">
             <span className="text-blue-600 font-bold">+</span>
-            <span>{item}</span>
+            <span>{t("services.aiMl.point1")}</span>
           </li>
-        ))}
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.aiMl.point2")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.aiMl.point3")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.aiMl.point4")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.aiMl.point5")}</span>
+          </li>
+        <li className="flex items-start gap-2">
+            <span className="text-blue-600 font-bold">+</span>
+            <span>{t("services.aiMl.point6")}</span>
+          </li>
       </ul>
     </div>
     
