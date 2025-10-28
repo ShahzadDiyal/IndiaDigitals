@@ -42,99 +42,98 @@
         "techStack-p1": "Our 4,000+ team has expertise in almost every ",
         "techStack-p2": "programming language.",
         "allTechnologies": "All Technologies we work with",
-      "services": {
-  "customSoftware": {
-    "heading": "Custom Software Development",
-    "point1": "Tailored Software Solutions",
-      "point2": "Enterprise Resource Planning",
-      "point3": "Customer Relationship Management",
-      "point4": "E-Commerce Platforms",
-      "point5": "SaaS Development",
-      "point6": "Application Modernization"
-  },
-  "mobileApp": {
-    "heading": "QA & Testing",
-    "point1": "Cross-Platform Development",
-      "point2": "Native App Development",
-      "point3": "App Store Optimization",
-      "point4": "User-Centric Design",
-      "point5": "In-App Purchase Integration",
-      "point6": "App Maintenance & Support"
-  },
-  "frontendDev": {
-    "heading": "Frontend Development",
-     "point1": "Responsive Web Design",
-      "point2": "HTML5 & CSS3",
-      "point3": "JavaScript & TypeScript",
-      "point4": "React & Vue.js",
-      "point5": "UI/UX Prototyping",
-      "point6": "Performance Optimization"
-  },
-  "backendDev": {
-    "heading": "Backend Development",
-    "point1": "API Development & Integration",
-      "point2": "Database Management",
-      "point3": "RESTful & GraphQL Services",
-      "point4": "User Authentication & Authorization",
-      "point5": "Server-Side Logic & Business Logic",
-      "point6": "Performance Optimization"
-  },
-  "cyberSecurity": {
-    "heading": "Cyber Security",
-    "point1": "Threat Assessment & Risk Analysis",
-      "point2": "Network Security Solutions",
-      "point3": "Vulnerability Management",
-      "point4": "Incident Response Planning",
-      "point5": "Data Encryption & Protection",
-      "point6": "Security Awareness Training"
-  },
-  "devops": {
-    "heading": "DevOps Solutions",
-    "point1": "CI/CD Pipeline Development",
-      "point2": "Infrastructure as Code (IaC)",
-      "point3": "Containerization (Docker, Kubernetes)",
-      "point4": "Monitoring & Logging Solutions",
-      "point5": "Configuration Management",
-      "point6": "Cloud Solutions & Migrations"
-  },
-  "aiMl": {
-    "heading": "AI/ML",
-     "point1": "Predictive Analytics",
-      "point2": "Natural Language Processing",
-      "point3": "Computer Vision",
-      "point4": "Recommendation Systems",
-      "point5": "Automated Machine Learning",
-      "point6": "AI Model Deployment"
-  },
-  "qaTesting": {
-    "heading": "QA & Testing",
-     "point1": "Manual & Automated Testing",
-      "point2": "Test Case Development",
-      "point3": "Performance Testing",
-      "point4": "Security Testing",
-      "point5": "User Acceptance Testing",
-      "point6": "Continuous Testing Integration"
-  },
-  "computerVision": {
-    "heading": "Computer Vision",
-     "point1": "Image Processing & Analysis",
-      "point2": "Object Detection & Recognition",
-      "point3": "Facial Recognition Technology",
-      "point4": "Augmented Reality (AR) Solutions",
-      "point5": "Visual Data Mining",
-      "point6": "Video Analytics Solutions"
-  },
-  "uxUi": {
-    "heading": "UX/UI Design",
-       "point1": "User Research & Analysis",
-      "point2": "Wireframing & Prototyping",
-      "point3": "High-Fidelity UI Design",
-      "point4": "Interaction Design",
-      "point5": "Usability Testing",
-      "point6": "Design System Creation"
-  }
-}
-
+        "services": {
+            "customSoftware": {
+                "heading": "Custom Software Development",
+                "point1": "Tailored Software Solutions",
+                "point2": "Enterprise Resource Planning",
+                "point3": "Customer Relationship Management",
+                "point4": "E-Commerce Platforms",
+                "point5": "SaaS Development",
+                "point6": "Application Modernization"
+            },
+            "mobileApp": {
+                "heading": "QA & Testing",
+                "point1": "Cross-Platform Development",
+                "point2": "Native App Development",
+                "point3": "App Store Optimization",
+                "point4": "User-Centric Design",
+                "point5": "In-App Purchase Integration",
+                "point6": "App Maintenance & Support"
+            },
+            "frontendDev": {
+                "heading": "Frontend Development",
+                "point1": "Responsive Web Design",
+                "point2": "HTML5 & CSS3",
+                "point3": "JavaScript & TypeScript",
+                "point4": "React & Vue.js",
+                "point5": "UI/UX Prototyping",
+                "point6": "Performance Optimization"
+            },
+            "backendDev": {
+                "heading": "Backend Development",
+                "point1": "API Development & Integration",
+                "point2": "Database Management",
+                "point3": "RESTful & GraphQL Services",
+                "point4": "User Authentication & Authorization",
+                "point5": "Server-Side Logic & Business Logic",
+                "point6": "Performance Optimization"
+            },
+            "cyberSecurity": {
+                "heading": "Cyber Security",
+                "point1": "Threat Assessment & Risk Analysis",
+                "point2": "Network Security Solutions",
+                "point3": "Vulnerability Management",
+                "point4": "Incident Response Planning",
+                "point5": "Data Encryption & Protection",
+                "point6": "Security Awareness Training"
+            },
+            "devops": {
+                "heading": "DevOps Solutions",
+                "point1": "CI/CD Pipeline Development",
+                "point2": "Infrastructure as Code (IaC)",
+                "point3": "Containerization (Docker, Kubernetes)",
+                "point4": "Monitoring & Logging Solutions",
+                "point5": "Configuration Management",
+                "point6": "Cloud Solutions & Migrations"
+            },
+            "aiMl": {
+                "heading": "AI/ML",
+                "point1": "Predictive Analytics",
+                "point2": "Natural Language Processing",
+                "point3": "Computer Vision",
+                "point4": "Recommendation Systems",
+                "point5": "Automated Machine Learning",
+                "point6": "AI Model Deployment"
+            },
+            "qaTesting": {
+                "heading": "QA & Testing",
+                "point1": "Manual & Automated Testing",
+                "point2": "Test Case Development",
+                "point3": "Performance Testing",
+                "point4": "Security Testing",
+                "point5": "User Acceptance Testing",
+                "point6": "Continuous Testing Integration"
+            },
+            "computerVision": {
+                "heading": "Computer Vision",
+                "point1": "Image Processing & Analysis",
+                "point2": "Object Detection & Recognition",
+                "point3": "Facial Recognition Technology",
+                "point4": "Augmented Reality (AR) Solutions",
+                "point5": "Visual Data Mining",
+                "point6": "Video Analytics Solutions"
+            },
+            "uxUi": {
+                "heading": "UX/UI Design",
+                "point1": "User Research & Analysis",
+                "point2": "Wireframing & Prototyping",
+                "point3": "High-Fidelity UI Design",
+                "point4": "Interaction Design",
+                "point5": "Usability Testing",
+                "point6": "Design System Creation"
+            }
+        }
     },
     "bgCaseStudy": {
         "headline": "We've stopped counting.",
