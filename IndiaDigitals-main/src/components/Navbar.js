@@ -55,12 +55,18 @@ const Navbar = () => {
     };
   }, [lastScrollTop]);
 
-  //dummy data
-  const solutions = [
-    "staffAugmentation",
-    "dedicatedTeams",
-    "softwareOutsourcing",
-  ];
+  // Map each key to a route
+const linkMap = {
+  "backendDevelopment": "/services/backend-development",
+  "frontendDevelopment": "/services/frontend-Development",
+  "machineLearning": "/services/machine-Learning",
+  "aiDevelopment": "/services/ai-solutions",
+  "cryptoBlockchain": "/services/crypto-Blockchain",
+  "cmsDevelopment": "/services/cms-Development",
+  "qaTestingAutomation": "/services/qa-TestingAutomation",
+  "uxUiDesign": "/services/ux-UiDesign",
+
+};
 
   const topSolKeys1 = [
     "aiDevelopment",
@@ -271,7 +277,7 @@ const Navbar = () => {
                       {topSolKeys1.map((key, i) => (
                         <li key={i}>
                           <a
-                            href="/technologies"
+                            href={linkMap[key]} //
                             className="hover:underline cursor-pointer pt-3"
                             style={{ fontSize: "18px" }}
                           >
