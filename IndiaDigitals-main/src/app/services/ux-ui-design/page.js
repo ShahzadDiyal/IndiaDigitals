@@ -3,69 +3,16 @@ import { useTranslations } from "next-intl";
 import BreadCrumb from "@/components/BreadCrumb";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import OurTechStacks from "@/components/home/OurTechStacks";
 
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
+  ChevronDownIcon,
 } from "@/components/ui/accordion";
 import BlogSection from "@/components/home/BlogSection";
-
-const frontendTechs = [
-  {
-    name: "React",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-  },
-  {
-    name: "Vue.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
-  },
-  {
-    name: "Next.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-  },
-  {
-    name: "TypeScript",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-  },
-  {
-    name: "HTML5",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-  },
-  {
-    name: "CSS3",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-  },
-  {
-    name: "Tailwind CSS",
-    icon: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
-  },
-  {
-    name: "Bootstrap",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
-  },
-  {
-    name: "Sass",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
-  },
-  {
-    name: "Angular",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
-  },
-  {
-    name: "jQuery",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg",
-  },
-  {
-    name: "Gatsby",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-original.svg",
-  },
-  {
-    name: "Ember.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ember/ember-original-wordmark.svg",
-  },
-];
 
 const imageUrl = "https://dhsol.net/_next/static/media/1.6732c3e5.svg";
 const page = () => {
@@ -173,35 +120,7 @@ const page = () => {
         </div>
       </section>
 
-      <section className="bg-white py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          {/* Main Heading */}
-          <h2 className="text-3xl md:text-5xl mb-10">Our Tech Stacks</h2>
-
-          {/* Frontend Section */}
-          <h3 className="text-2xl md:text-3xl font-semibold mb-10">
-            Frontend Development
-          </h3>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 justify-items-center">
-            {frontendTechs.map((tech, index) => (
-              <div
-                key={index}
-                className="group border border-gray-200 hover:border-gray-300 rounded-2xl shadow-sm hover:shadow-lg transition-all w-full h-full max-w-[160px] sm:max-w-[180px] md:max-w-[200px] min-h-[180px] flex flex-col items-center justify-center p-6 bg-gradient-to-b from-white to-gray-50 hover:from-gray-50 hover:to-white"
-              >
-                <img
-                  src={tech.icon}
-                  alt={tech.name}
-                  className="w-14 h-14 mb-4 object-contain transition-transform duration-300 group-hover:scale-110"
-                />
-                <p className="text-gray-800 font-medium text-base md:text-lg text-center">
-                  {tech.name}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <OurTechStacks />
 
       <section className=" px-7 xl:px-36 pb-16">
         <h1 className="text-3xl md:text-5xl mb-10">

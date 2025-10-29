@@ -9,65 +9,34 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
+  ChevronDownIcon,
 } from "@/components/ui/accordion";
 import BlogSection from "@/components/home/BlogSection";
 
-const frontendTechs = [
+const aiTechs = [
   {
-    name: "React",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    name: "Python",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
   },
   {
-    name: "Vue.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+    name: "TensorFlow",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
   },
   {
-    name: "Next.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    name: "PyTorch",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg",
   },
   {
-    name: "TypeScript",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    name: "Jupyter",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg",
   },
   {
-    name: "HTML5",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-  },
-  {
-    name: "CSS3",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-  },
-  {
-    name: "Tailwind CSS",
-    icon: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
-  },
-  {
-    name: "Bootstrap",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
-  },
-  {
-    name: "Sass",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
-  },
-  {
-    name: "Angular",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
-  },
-  {
-    name: "jQuery",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg",
-  },
-  {
-    name: "Gatsby",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-original.svg",
-  },
-  {
-    name: "Ember.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ember/ember-original-wordmark.svg",
+    name: "OpenCV",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg",
   },
 ];
 
-const imageUrl = "https://dhsol.net/_next/static/media/1.6732c3e5.svg";
+const imageUrl = "https://dhsol.net/_next/static/media/4.4fe3b4b8.svg";
 const page = () => {
   const t = useTranslations("customSoftware-page");
   return (
@@ -80,28 +49,26 @@ const page = () => {
       <section className=" px-7 xl:px-36 pb-16">
         <div className="text-zinc-500/95 font-bold text-sm mt-12 tracking-widest">
           {/* {t("heading")} */}
-          Frontend Development Services
+          AI & Machine Learning Solutions
         </div>
         <div className="my-6 flex w-full ">
           <div className="flex flex-col gap-4 lg:gap-0 justify-between py-10 w-full lg:w-[670px] xl:w-[820px]">
             <h1 className=" text-gray-900/90 font-medium  text-4xl sm:text-5xl xl:text-6xl">
               {/* {t("subheading")}&nbsp; */}
-              Expert Front-End Development Services
+              AI & Machine Learning Solutions
             </h1>
             <p className=" text-gray-900/70 my-4 text-xl ">
               {/* {t("description")} */}
-              At DH Solutions, we specialize in delivering exceptional front-end
-              development services tailored to meet your unique business needs.
-              Our expert team ensures that every project aligns with your
-              objectives, focusing on creating user-centric designs that enhance
-              user experience.
+              At DH Solutions, we provide advanced AI and machine learning
+              solutions designed to enhance your business operations. Our
+              dedicated team harnesses the power of AI to deliver tailored
+              solutions that drive innovation and efficiency.{" "}
             </p>
             <p className=" text-gray-900/70 my-4 text-xl ">
               {/* {t("description")} */}
-              Our approach is unique; we recognize that each project is distinct
-              and presents an opportunity to innovate. We utilize the latest
-              technologies and frameworks to develop solutions that drive
-              results, helping you achieve your goals efficiently.
+              We focus on understanding your unique challenges and leveraging
+              machine learning algorithms to develop predictive models, automate
+              processes, and extract actionable insights from your data.
             </p>
             {/* <a href="/basic-detail" className="w-fit">
               <button className="bg-orange-600/95  text-white text-lg md:text-xl font-medium sm:font-normal px-3 py-2 sm:px-5 sm:py-3 rounded-lg">
@@ -126,24 +93,24 @@ const page = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {[
               {
-                title: "Planning and Sketching",
+                title: "Data Collection and Preparation",
                 description:
-                  "We begin with a detailed planning and sketching phase to ensure that all aspects of the design meet our clients’ expectations and project goals.",
+                  "Gathering relevant data from various sources and preparing it for analysis is crucial. This step ensures that the data is clean, structured, and ready for model training.",
               },
               {
-                title: "Collaborative Teamwork",
+                title: "Model Development and Training",
                 description:
-                  "Our talented team collaborates closely throughout the project, ensuring innovative solutions and designs that are both modern and user-friendly.",
+                  "Utilizing advanced algorithms and frameworks, we develop and train machine learning models to identify patterns and make predictions based on the prepared data.",
               },
               {
-                title: "Flowchart and Wireframe Development",
+                title: "Model Evaluation and Tuning",
                 description:
-                  "We create detailed flowcharts and wireframes to visualize the structure, functionality, and flow of the product before development begins.",
+                  "After training, we rigorously evaluate the models using various metrics. This step includes fine-tuning parameters to enhance performance and ensure reliability.",
               },
               {
-                title: "User Experience Testing",
+                title: "Deployment and Monitoring",
                 description:
-                  "Rigorous UX testing allows us to gather valuable feedback, ensuring our designs are intuitive, efficient, and meet real user needs.",
+                  "Once the model meets performance standards, it is deployed into production. Continuous monitoring ensures its effectiveness and allows for timely updates based on new data and feedback.",
               },
             ].map((item, index) => (
               <div
@@ -178,13 +145,13 @@ const page = () => {
           {/* Main Heading */}
           <h2 className="text-3xl md:text-5xl mb-10">Our Tech Stacks</h2>
 
-          {/* Frontend Section */}
+          {/* AI/ML Section */}
           <h3 className="text-2xl md:text-3xl font-semibold mb-10">
-            Frontend Development
+            AI/ML Solutions
           </h3>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 justify-items-center">
-            {frontendTechs.map((tech, index) => (
+            {aiTechs.map((tech, index) => (
               <div
                 key={index}
                 className="group border border-gray-200 hover:border-gray-300 rounded-2xl shadow-sm hover:shadow-lg transition-all w-full h-full max-w-[160px] sm:max-w-[180px] md:max-w-[200px] min-h-[180px] flex flex-col items-center justify-center p-6 bg-gradient-to-b from-white to-gray-50 hover:from-gray-50 hover:to-white"
@@ -206,99 +173,93 @@ const page = () => {
       <section className=" px-7 xl:px-36 pb-16">
         <h1 className="text-3xl md:text-5xl mb-10">
           {/* {t("heading2")} */}
-          Product making for friendly users
+          Frequently Asked Questions about AI & ML Solutions
           <br />
           {/* {t("subheading3")} */}
         </h1>
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1">
-            <AccordionTrigger className="text-xl md:text-3xl font-normal text-gray-900/80 hover:underline hover:text-orange-500/95 ">
+            <AccordionTrigger className="text-xl md:text-2xl font-normal text-gray-900/80 hover:underline hover:text-orange-500/95 ">
               {/* {t("accordion-h1")} */}
-              Design should enrich our day
+              How does AI enhance user experience?
             </AccordionTrigger>
             <AccordionContent className="flex flex-wrap p-3 justify-between mt-3 ">
               <div className="lg:w-[47%] mb-4">
                 <h3 className="text-xl">{t("accordion.item1.title")}</h3>
                 <p className="text-[16px] text-gray-900/80 py-3">
                   {/* {t("accordion.item1.description")} */}
-                  Our design services starts and ends with a best-in-class
-                  experience strategy that builds brands. Through a process of
-                  iteration and prototyping design interfaces that bring joy to
-                  people
+                  AI enhances user experience by analyzing user behavior and
+                  preferences, allowing for personalized interactions and
+                  content that resonate with individual users.{" "}
                 </p>
               </div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
-            <AccordionTrigger className="text-xl md:text-3xl font-normal text-gray-900/80">
+            <AccordionTrigger className="text-xl md:text-2xl font-normal text-gray-900/80">
               {/* {t("accordion-h2")} */}
-              Bring their individual experience and creative
+              What role does machine learning play in AI applications?
             </AccordionTrigger>
             <AccordionContent className="flex flex-wrap p-3 justify-between mt-3 ">
               <div className="lg:w-[47%] mb-4">
                 <h3 className="text-xl">{t("accordion.item1.title")}</h3>
                 <p className="text-[16px] text-gray-900/80 py-3">
                   {/* {t("accordion.item1.description")} */}
-                  This is the second item's accordion body. It is hidden by
-                  default, until the collapse plugin adds the appropriate
-                  classes that we use to style each element. These classes
-                  control the overall appearance, as well as the showing and
-                  hiding via CSS transitions. You can modify any of this with
-                  custom CSS or overriding our default variables.
+                  Machine learning algorithms enable AI applications to learn
+                  from data, improving accuracy and effectiveness over time by
+                  adapting to new information and patterns.{" "}
                 </p>
               </div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
-            <AccordionTrigger className="text-xl md:text-3xl font-normal text-gray-900/80 text-left">
+            <AccordionTrigger className="text-xl md:text-2xl font-normal text-gray-900/80 text-left">
               {/* {t("accordion-h3")} */}
-              Human centred design to challenges
+              How do AI solutions ensure data privacy?{" "}
             </AccordionTrigger>
             <AccordionContent className="flex flex-wrap p-3 justify-between mt-3 ">
               <div className="lg:w-[47%] mb-4">
                 <h3 className="text-xl">{t("accordion.item1.title")}</h3>
                 <p className="text-[16px] text-gray-900/80 py-3">
                   {/* {t("accordion.item1.description")} */}
-                  Our design services starts and ends with a best-in-class
-                  experience strategy that builds brands. Through a process of
-                  iteration and prototyping design interfaces that bring joy to
-                  people
+                  Our AI solutions prioritize data privacy by implementing
+                  strong encryption, anonymization techniques, and adhering to
+                  industry standards for data protection.{" "}
                 </p>
               </div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
-            <AccordionTrigger className="text-xl md:text-3xl font-normal text-gray-900/80 text-left">
+            <AccordionTrigger className="text-xl md:text-2xl font-normal text-gray-900/80 text-left">
               {/* {t("accordion-h3")} */}
-              Design should enrich our day
+              Can AI help in predictive analytics?{" "}
             </AccordionTrigger>
             <AccordionContent className="flex flex-wrap p-3 justify-between mt-3 ">
               <div className="lg:w-[47%] mb-4">
                 <h3 className="text-xl">{t("accordion.item1.title")}</h3>
                 <p className="text-[16px] text-gray-900/80 py-3">
                   {/* {t("accordion.item1.description")} */}
-                  Our design services starts and ends with a best-in-class
-                  experience strategy that builds brands. Through a process of
-                  iteration and prototyping design interfaces that bring joy to
-                  people{" "}
+                  Yes, AI is instrumental in predictive analytics, as it can
+                  process vast amounts of data to identify trends and make
+                  accurate predictions that inform decision-making.{" "}
                 </p>
               </div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-5">
-            <AccordionTrigger className="text-xl md:text-3xl font-normal text-gray-900/80 text-left">
+            <AccordionTrigger className="text-xl md:text-2xl font-normal text-gray-900/80 text-left">
               {/* {t("accordion-h3")} */}
-              Developing core web applications
+              How does AI improve application performance?{" "}
             </AccordionTrigger>
             <AccordionContent className="flex flex-wrap p-3 justify-between mt-3 ">
               <div className="lg:w-[47%] mb-4">
                 <h3 className="text-xl">{t("accordion.item1.title")}</h3>
                 <p className="text-[16px] text-gray-900/80 py-3">
                   {/* {t("accordion.item1.description")} */}
-                  Our design services starts and ends with a best-in-class
-                  experience strategy that builds brands. Through a process of
-                  iteration and prototyping design interfaces that bring joy to
-                  people{" "}
+                  AI optimizes application performance by utilizing real-time
+                  analytics to monitor user interactions, enabling developers to
+                  make data-driven improvements that enhance speed and
+                  efficiency.{" "}
                 </p>
               </div>
             </AccordionContent>

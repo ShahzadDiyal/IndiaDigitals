@@ -3,71 +3,37 @@ import { useTranslations } from "next-intl";
 import BreadCrumb from "@/components/BreadCrumb";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import OurTechStacks from "@/components/home/OurTechStacks";
 
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
+  ChevronDownIcon,
 } from "@/components/ui/accordion";
 import BlogSection from "@/components/home/BlogSection";
 
-const frontendTechs = [
-  {
-    name: "React",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-  },
-  {
-    name: "Vue.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
-  },
-  {
-    name: "Next.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-  },
-  {
-    name: "TypeScript",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-  },
-  {
-    name: "HTML5",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-  },
-  {
-    name: "CSS3",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-  },
-  {
-    name: "Tailwind CSS",
-    icon: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
-  },
-  {
-    name: "Bootstrap",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
-  },
-  {
-    name: "Sass",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
-  },
-  {
-    name: "Angular",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
-  },
-  {
-    name: "jQuery",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg",
-  },
-  {
-    name: "Gatsby",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-original.svg",
-  },
-  {
-    name: "Ember.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ember/ember-original-wordmark.svg",
-  },
+
+
+const backendTechs = [
+  { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+  { name: "Express.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
+  { name: "Django", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" },
+  { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+  { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+  { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+  { name: "GraphQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" },
+  { name: "Laravel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" },
+  { name: "Ruby on Rails", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg" },
+  { name: "Spring Boot", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
+  { name: "ASP.NET", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" },
+  { name: "Redis", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" },
+  { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
 ];
 
-const imageUrl = "https://dhsol.net/_next/static/media/1.6732c3e5.svg";
+
+const imageUrl = "	https://dhsol.net/_next/static/media/2.c56f48ec.svg";
 const page = () => {
   const t = useTranslations("customSoftware-page");
   return (
@@ -80,28 +46,29 @@ const page = () => {
       <section className=" px-7 xl:px-36 pb-16">
         <div className="text-zinc-500/95 font-bold text-sm mt-12 tracking-widest">
           {/* {t("heading")} */}
-          Frontend Development Services
+          Expert Backend Development Services
         </div>
         <div className="my-6 flex w-full ">
           <div className="flex flex-col gap-4 lg:gap-0 justify-between py-10 w-full lg:w-[670px] xl:w-[820px]">
             <h1 className=" text-gray-900/90 font-medium  text-4xl sm:text-5xl xl:text-6xl">
               {/* {t("subheading")}&nbsp; */}
-              Expert Front-End Development Services
+              Expert Backend Development Services
             </h1>
             <p className=" text-gray-900/70 my-4 text-xl ">
               {/* {t("description")} */}
-              At DH Solutions, we specialize in delivering exceptional front-end
-              development services tailored to meet your unique business needs.
-              Our expert team ensures that every project aligns with your
-              objectives, focusing on creating user-centric designs that enhance
-              user experience.
+              At DH Solutions, we specialize in providing robust backend
+              development services that serve as the backbone for your
+              applications. Our skilled team focuses on building secure,
+              scalable, and high-performance systems that align with your
+              business requirements.
             </p>
             <p className=" text-gray-900/70 my-4 text-xl ">
               {/* {t("description")} */}
-              Our approach is unique; we recognize that each project is distinct
-              and presents an opportunity to innovate. We utilize the latest
-              technologies and frameworks to develop solutions that drive
-              results, helping you achieve your goals efficiently.
+              We adopt a unique approach to backend development, treating each
+              project as an opportunity to create seamless integrations and
+              efficient workflows. Utilizing the latest technologies and
+              frameworks, we build solutions that support your frontend
+              interfaces and drive exceptional user experiences.
             </p>
             {/* <a href="/basic-detail" className="w-fit">
               <button className="bg-orange-600/95  text-white text-lg md:text-xl font-medium sm:font-normal px-3 py-2 sm:px-5 sm:py-3 rounded-lg">
@@ -126,24 +93,24 @@ const page = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {[
               {
-                title: "Planning and Sketching",
+                title: "Requirements Analysis",
                 description:
-                  "We begin with a detailed planning and sketching phase to ensure that all aspects of the design meet our clients’ expectations and project goals.",
+                  "We begin with a thorough analysis of project requirements to ensure the backend architecture aligns with the business objectives and technical constraints.",
               },
               {
-                title: "Collaborative Teamwork",
+                title: "Database Design",
                 description:
-                  "Our talented team collaborates closely throughout the project, ensuring innovative solutions and designs that are both modern and user-friendly.",
+                  "Crafting a robust database schema optimized for performance, scalability, and data integrity to support the application’s data needs.",
               },
               {
-                title: "Flowchart and Wireframe Development",
+                title: "API Development",
                 description:
-                  "We create detailed flowcharts and wireframes to visualize the structure, functionality, and flow of the product before development begins.",
+                  "Developing secure and scalable APIs that enable smooth communication between the frontend and backend, providing essential data and functionality.",
               },
               {
-                title: "User Experience Testing",
+                title: "Testing & Deployment",
                 description:
-                  "Rigorous UX testing allows us to gather valuable feedback, ensuring our designs are intuitive, efficient, and meet real user needs.",
+                  "Rigorous testing ensures the backend performs as expected. We deploy to production environments and provide continuous monitoring and support.",
               },
             ].map((item, index) => (
               <div
@@ -173,132 +140,130 @@ const page = () => {
         </div>
       </section>
 
-      <section className="bg-white py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          {/* Main Heading */}
-          <h2 className="text-3xl md:text-5xl mb-10">Our Tech Stacks</h2>
+ <section className="bg-white py-20">
+      <div className="max-w-6xl mx-auto px-6">
+        {/* Main Heading */}
+        <h2 className="text-3xl md:text-5xl mb-10">Our Tech Stacks</h2>
 
-          {/* Frontend Section */}
-          <h3 className="text-2xl md:text-3xl font-semibold mb-10">
-            Frontend Development
-          </h3>
+        {/* Backend Section */}
+        <h3 className="text-2xl md:text-3xl font-semibold mb-10">
+          Backend Development
+        </h3>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 justify-items-center">
-            {frontendTechs.map((tech, index) => (
-              <div
-                key={index}
-                className="group border border-gray-200 hover:border-gray-300 rounded-2xl shadow-sm hover:shadow-lg transition-all w-full h-full max-w-[160px] sm:max-w-[180px] md:max-w-[200px] min-h-[180px] flex flex-col items-center justify-center p-6 bg-gradient-to-b from-white to-gray-50 hover:from-gray-50 hover:to-white"
-              >
-                <img
-                  src={tech.icon}
-                  alt={tech.name}
-                  className="w-14 h-14 mb-4 object-contain transition-transform duration-300 group-hover:scale-110"
-                />
-                <p className="text-gray-800 font-medium text-base md:text-lg text-center">
-                  {tech.name}
-                </p>
-              </div>
-            ))}
-          </div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 justify-items-center">
+          {backendTechs.map((tech, index) => (
+            <div
+              key={index}
+              className="group border border-gray-200 hover:border-gray-300 rounded-2xl shadow-sm hover:shadow-lg transition-all w-full h-full max-w-[160px] sm:max-w-[180px] md:max-w-[200px] min-h-[180px] flex flex-col items-center justify-center p-6 bg-gradient-to-b from-white to-gray-50 hover:from-gray-50 hover:to-white"
+            >
+              <img
+                src={tech.icon}
+                alt={tech.name}
+                className="w-14 h-14 mb-4 object-contain transition-transform duration-300 group-hover:scale-110"
+              />
+              <p className="text-gray-800 font-medium text-base md:text-lg text-center">
+                {tech.name}
+              </p>
+            </div>
+          ))}
         </div>
-      </section>
+      </div>
+    </section>
 
       <section className=" px-7 xl:px-36 pb-16">
         <h1 className="text-3xl md:text-5xl mb-10">
           {/* {t("heading2")} */}
-          Product making for friendly users
+          Designing Products for User Friendliness
           <br />
           {/* {t("subheading3")} */}
         </h1>
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1">
-            <AccordionTrigger className="text-xl md:text-3xl font-normal text-gray-900/80 hover:underline hover:text-orange-500/95 ">
+            <AccordionTrigger className="text-xl md:text-2xl font-normal text-gray-900/80 hover:underline hover:text-orange-500/95 ">
               {/* {t("accordion-h1")} */}
-              Design should enrich our day
+              Enriching Daily Experiences Through Design
             </AccordionTrigger>
             <AccordionContent className="flex flex-wrap p-3 justify-between mt-3 ">
               <div className="lg:w-[47%] mb-4">
                 <h3 className="text-xl">{t("accordion.item1.title")}</h3>
                 <p className="text-[16px] text-gray-900/80 py-3">
                   {/* {t("accordion.item1.description")} */}
-                  Our design services starts and ends with a best-in-class
-                  experience strategy that builds brands. Through a process of
-                  iteration and prototyping design interfaces that bring joy to
-                  people
+                  Our design services start and end with a top-tier experience
+                  strategy aimed at building strong brands. We use an iterative
+                  process with prototyping to create interfaces that bring joy
+                  and functionality to users.
                 </p>
               </div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
-            <AccordionTrigger className="text-xl md:text-3xl font-normal text-gray-900/80">
+            <AccordionTrigger className="text-xl md:text-2xl font-normal text-gray-900/80">
               {/* {t("accordion-h2")} */}
-              Bring their individual experience and creative
+              Combining Creative Expertise and Individual Experience
             </AccordionTrigger>
             <AccordionContent className="flex flex-wrap p-3 justify-between mt-3 ">
               <div className="lg:w-[47%] mb-4">
                 <h3 className="text-xl">{t("accordion.item1.title")}</h3>
                 <p className="text-[16px] text-gray-900/80 py-3">
                   {/* {t("accordion.item1.description")} */}
-                  This is the second item's accordion body. It is hidden by
-                  default, until the collapse plugin adds the appropriate
-                  classes that we use to style each element. These classes
-                  control the overall appearance, as well as the showing and
-                  hiding via CSS transitions. You can modify any of this with
-                  custom CSS or overriding our default variables.
+                  We bring together diverse experiences and creativity to
+                  develop custom solutions. Our approach involves detailed
+                  design, strategic planning, and a commitment to user-centered
+                  practices for impactful results.
                 </p>
               </div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
-            <AccordionTrigger className="text-xl md:text-3xl font-normal text-gray-900/80 text-left">
+            <AccordionTrigger className="text-xl md:text-2xl font-normal text-gray-900/80 text-left">
               {/* {t("accordion-h3")} */}
-              Human centred design to challenges
+              Human-Centered Design for Real-World Challenges
             </AccordionTrigger>
             <AccordionContent className="flex flex-wrap p-3 justify-between mt-3 ">
               <div className="lg:w-[47%] mb-4">
                 <h3 className="text-xl">{t("accordion.item1.title")}</h3>
                 <p className="text-[16px] text-gray-900/80 py-3">
                   {/* {t("accordion.item1.description")} */}
-                  Our design services starts and ends with a best-in-class
-                  experience strategy that builds brands. Through a process of
-                  iteration and prototyping design interfaces that bring joy to
-                  people
+                  By focusing on human-centered design, we address real-world
+                  challenges and enhance usability. Our goal is to create
+                  solutions that are intuitive and cater to the needs of
+                  end-users, adding true value to their daily lives.
                 </p>
               </div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
-            <AccordionTrigger className="text-xl md:text-3xl font-normal text-gray-900/80 text-left">
+            <AccordionTrigger className="text-xl md:text-2xl font-normal text-gray-900/80 text-left">
               {/* {t("accordion-h3")} */}
-              Design should enrich our day
+              Enhancing User Experience Through Iteration
             </AccordionTrigger>
             <AccordionContent className="flex flex-wrap p-3 justify-between mt-3 ">
               <div className="lg:w-[47%] mb-4">
                 <h3 className="text-xl">{t("accordion.item1.title")}</h3>
                 <p className="text-[16px] text-gray-900/80 py-3">
                   {/* {t("accordion.item1.description")} */}
-                  Our design services starts and ends with a best-in-class
-                  experience strategy that builds brands. Through a process of
-                  iteration and prototyping design interfaces that bring joy to
-                  people{" "}
+                  Iteration is key to our design process. By continuously
+                  refining and testing, we ensure that the final product meets
+                  high standards of quality, usability, and performance,
+                  providing an enriched user experience.{" "}
                 </p>
               </div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-5">
-            <AccordionTrigger className="text-xl md:text-3xl font-normal text-gray-900/80 text-left">
+            <AccordionTrigger className="text-xl md:text-2xl font-normal text-gray-900/80 text-left">
               {/* {t("accordion-h3")} */}
-              Developing core web applications
+              Building Core Web Applications
             </AccordionTrigger>
             <AccordionContent className="flex flex-wrap p-3 justify-between mt-3 ">
               <div className="lg:w-[47%] mb-4">
                 <h3 className="text-xl">{t("accordion.item1.title")}</h3>
                 <p className="text-[16px] text-gray-900/80 py-3">
                   {/* {t("accordion.item1.description")} */}
-                  Our design services starts and ends with a best-in-class
-                  experience strategy that builds brands. Through a process of
-                  iteration and prototyping design interfaces that bring joy to
-                  people{" "}
+                  Our development team specializes in creating powerful web
+                  applications that integrate seamlessly into your business. We
+                  prioritize performance, scalability, and security to deliver
+                  solutions that meet your core business needs.{" "}
                 </p>
               </div>
             </AccordionContent>

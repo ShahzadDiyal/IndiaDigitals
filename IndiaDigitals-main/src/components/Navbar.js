@@ -56,27 +56,24 @@ const Navbar = () => {
   }, [lastScrollTop]);
 
   // Map each key to a route
-const linkMap = {
-  "backendDevelopment": "/services/backend-development",
-  "frontendDevelopment": "/services/frontend-Development",
-  "machineLearning": "/services/machine-Learning",
-  "aiDevelopment": "/services/ai-solutions",
-  "cryptoBlockchain": "/services/crypto-Blockchain",
-  "cmsDevelopment": "/services/cms-Development",
-  "qaTestingAutomation": "/services/qa-TestingAutomation",
-  "uxUiDesign": "/services/ux-UiDesign",
-
-};
+  const linkMap = {
+    frontendDevelopment: "/services/frontend-development",
+    backendDevelopment: "/services/backend-development",
+    machineLearning: "/services/machine-learning",
+    mobileDevelopment: "/services/mobile-development",
+    qaTestingAutomation: "/services/qa-testing-automation",
+  };
 
   const topSolKeys1 = [
-    "aiDevelopment",
-    "backendDevelopment",
-    "cmsDevelopment",
-    "cryptoBlockchain",
     "frontendDevelopment",
+    "backendDevelopment",
     "machineLearning",
     "qaTestingAutomation",
-    "uxUiDesign",
+    "mobileDevelopment",
+    "cybersecurity",
+    "devOps",
+    "webDevelopment",
+
   ];
 
   const topSolKeys2 = [
@@ -85,9 +82,7 @@ const linkMap = {
     "dataEngineering",
     "ecommerceDevelopment",
     "iosDevelopment",
-    "mobileDevelopment",
     "saasDevelopment",
-    "webDevelopment",
   ];
 
   const topSolKeys3 = [
@@ -95,8 +90,6 @@ const linkMap = {
     "bigData",
     "cloudApplications",
     "crmSystems",
-    "cybersecurity",
-    "devOps",
     "digitalTransformations",
     "erpDevelopment",
   ];
@@ -277,11 +270,15 @@ const linkMap = {
                       {topSolKeys1.map((key, i) => (
                         <li key={i}>
                           <a
-                            href={linkMap[key]} //
+                            href={linkMap[key]}
+                            onClick={(e) => {
+                              e.preventDefault();
+                              window.location.href = linkMap[key];
+                            }}
                             className="hover:underline cursor-pointer pt-3"
                             style={{ fontSize: "18px" }}
                           >
-                            {t(`${key}`)}
+                            {t(key)}
                           </a>
                         </li>
                       ))}
@@ -466,7 +463,10 @@ const linkMap = {
             )}
           </div>
 
-          <a  href="/our-work" className="px-5 text-xl font-bold hover:text-red-500 py-7 ">
+          <a
+            href="/our-work"
+            className="px-5 text-xl font-bold hover:text-red-500 py-7 "
+          >
             {t("ourWork")}
           </a>
           <a
@@ -475,7 +475,10 @@ const linkMap = {
           >
             {t("aboutus")}
           </a>
-          <a href="/blog"className="px-5 text-xl font-bold hover:text-red-500 py-7">
+          <a
+            href="/blog"
+            className="px-5 text-xl font-bold hover:text-red-500 py-7"
+          >
             {t("blog")}
           </a>
 

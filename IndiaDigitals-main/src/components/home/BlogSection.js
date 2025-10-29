@@ -1,17 +1,8 @@
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
-// Mocking useTranslations
-const useTranslations = (namespace) => {
-  const translations = {
-    blogSection: {
-      heading: "Latest Insights & News",
-      description: "View All Articles",
-    },
-  };
-  return (key) => translations[namespace][key] || key;
-};
 
 // Mock data for the cards, adjusted to fit the new design (with author info)
 const mockData = [
