@@ -62,6 +62,10 @@ const Navbar = () => {
     machineLearning: "/services/machine-learning",
     mobileDevelopment: "/services/mobile-development",
     qaTestingAutomation: "/services/qa-testing-automation",
+    cybersecurity: "/services/cybersecurity",
+    devOps: "/services/devops",
+    softwareDevelopment: "/services/software-Development",
+    computerVision:"/services/computer-vision"
   };
 
   const topSolKeys1 = [
@@ -72,8 +76,8 @@ const Navbar = () => {
     "mobileDevelopment",
     "cybersecurity",
     "devOps",
-    "webDevelopment",
-
+    "softwareDevelopment",
+    "computerVision"
   ];
 
   const topSolKeys2 = [
