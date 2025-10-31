@@ -10,7 +10,8 @@ const Footer = () => {
             <span className="text-white">
               {t("accelerateSoftwarep-1")} <br /> {t("accelerateSoftwarep-2")}{" "}
             </span>
-            <br /> <span className="text-orange-600">{t("seeHowWeCanHelp")}</span>
+            <br />{" "}
+            <span className="text-orange-600">{t("seeHowWeCanHelp")}</span>
           </span>
           <a
             href="/basic-detail"
@@ -38,22 +39,22 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-gray-600">
               <li>
                 <a href="/about" className="hover:text-gray-900">
-                 {t("aboutus")}
+                  {t("aboutus")}
                 </a>
               </li>
               <li>
                 <a href="/methodologies" className="hover:text-gray-900">
-                 {t("methodologies")}
+                  {t("methodologies")}
                 </a>
               </li>
               <li>
                 <a href="/technologies" className="hover:text-gray-900">
-           {t("technologies")}
+                  {t("technologies")}
                 </a>
               </li>
               <li>
                 <a href="/certifications" className="hover:text-gray-900">
-                {t("certifications")} 
+                  {t("certifications")}
                 </a>
               </li>
               <li>
@@ -81,12 +82,12 @@ const Footer = () => {
               </li>
               <li>
                 <a href="/outsourcing" className="hover:text-gray-900">
-                {t("outsourcing")}
+                  {t("outsourcing")}
                 </a>
               </li>
               <li>
                 <a href="/diversity" className="hover:text-gray-900">
-               {t("diversity")}
+                  {t("diversity")}
                 </a>
               </li>
               <li>
@@ -107,52 +108,54 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2 text-sm text-gray-600">
               <li>
-                <a href="/case-studies" className="hover:text-gray-900">
-                {t("frontEndDevelopment")}
-                </a>
-              </li>
-              <li>
-                <a href="/blog" className="hover:text-gray-900">
-              {t("backEndDevelopment")}
-                </a>
-              </li>
-              <li>
-                <a href="/press" className="hover:text-gray-900">
-                 {t("backEndDevelopment")}
-                </a>
-              </li>
-              <li>
-                <a href="/industry-insights" className="hover:text-gray-900">
-                 {t("aiMlSolutions")}
+                <a
+                  href="/services/frontend-development"
+                  className="hover:text-gray-900"
+                >
+                  {t("frontEndDevelopment")}
                 </a>
               </li>
               <li>
                 <a
-                  href="/technology-resource-center"
+                  href="/services/backend-development"
+                  className="hover:text-gray-900"
+                >
+                  {t("backEndDevelopment")}
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/services/machine-learning"
+                  className="hover:text-gray-900"
+                >
+                  {t("aiMlSolutions")}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/services/cybersecurity"
                   className="hover:text-gray-900"
                 >
                   {t("cyberSecurity")}
                 </a>
               </li>
               <li>
-                <a
-                  href="/client-referral-program"
-                  className="hover:text-gray-900"
-                >
+                <a href="/services/devops" className="hover:text-gray-900">
                   {t("devOpsSolutions")}
                 </a>
               </li>
               <li>
                 <a
-                  href="/client-referral-program"
+                  href="/services/software-Development"
                   className="hover:text-gray-900"
                 >
-                 {t("softwareDevelopment")}
+                  {t("softwareDevelopment")}
                 </a>
               </li>
               <li>
                 <a
-                  href="/client-referral-program"
+                  href="/services/qa-testing-automation"
                   className="hover:text-gray-900"
                 >
                   {t("qaTesting")}
@@ -160,34 +163,39 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/client-referral-program"
+                  href="/services/computer-vision"
                   className="hover:text-gray-900"
                 >
                   {t("computerVision")}
                 </a>
               </li>
               <li>
-                <a className="hover:text-gray-900">{t("phone")}:(888) 610-DHSOL</a>
+                <a className="hover:text-gray-900">
+                  {t("phone")}:(888) 610-DHSOL
+                </a>
               </li>
             </ul>
           </div>
 
           {/* Column 3: Careers */}
           <div className="xl:pl-8 p-14">
-            <h3 className="text-xl font-semibold text-gray-900 mb-6">
-              {t("career")}
+            <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+              {t("career")} <strong className="font-bold text-5xl text-blue-700">.</strong>
             </h3>
             <ul className="space-y-2 text-sm text-gray-600">
               <li>
-                <a href="/case-studies" className="hover:text-gray-900">
+                <a
+                  href="/career/job-opportunities"
+                  className="hover:text-gray-900"
+                >
                   {t("jobOpportunities")}
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="/blog" className="hover:text-gray-900">
                   {t("talentReferrals")}
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -241,7 +249,6 @@ const Footer = () => {
                   style={{ fontSize: "16px" }}
                 >
                   {t("getInsights")}
-                 
                 </p>
               </div>
               <form className="space-y-2">
@@ -252,8 +259,8 @@ const Footer = () => {
                 />
                 <label className="flex items-start gap-2 text-xs text-gray-500">
                   <input type="checkbox" className="mt-1" />
-                  <span style={{fontSize:"15px"}}>
-                   {t("privacyAcceptance")}{" "}
+                  <span style={{ fontSize: "15px" }}>
+                    {t("privacyAcceptance")}{" "}
                     <a
                       href="/privacy-policy"
                       className="text-orange-500 hover:underline"
@@ -263,6 +270,7 @@ const Footer = () => {
                     .
                   </span>
                 </label>
+
                 <button
                   type="submit"
                   className="w-full px-4 py-3 bg-orange-500 text-white rounded-lg text-base hover:bg-orange-600"
@@ -289,8 +297,32 @@ const Footer = () => {
               >
                 {t("privacy_policy")}
               </a>
-              <a href="/terms" className="hover:text-orange-400 transition">
+              <a
+                href="/terms-and-conditions"
+                className="hover:text-orange-400 transition"
+              >
                 {t("terms_conditions")}
+              </a>
+              <a
+                href="/supplier-code"
+                className="hover:text-orange-400 transition"
+              >
+                {t("supplierCodeOfConduct")}
+              </a>
+              <a
+                href="/anti-human-tracking"
+                className="hover:text-orange-400 transition"
+              >
+                {t("antiHumantracking")}
+              </a>
+              <a
+                href="/cookie-policy"
+                className="hover:text-orange-400 transition"
+              >
+                {t("cookiePolicy")}
+              </a>
+              <a href="/ai-policy" className="hover:text-orange-400 transition">
+                {t("aiPolicy")}
               </a>
             </div>
           </div>

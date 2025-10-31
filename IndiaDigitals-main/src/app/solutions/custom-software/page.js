@@ -22,12 +22,12 @@ const page = () => {
       />
       <section className=" px-7 xl:px-36 pb-16">
         <div className="text-zinc-500/95 font-bold text-sm mt-12 tracking-widest">
-           {t("heading")}
+           {/* {t("heading")} */}
         </div>
         <div className="my-6 flex w-full ">
           <div className="flex flex-col gap-4 lg:gap-0 justify-between py-10 w-full lg:w-[670px] xl:w-[820px]">
             <h1 className=" text-gray-900/90 font-medium  text-4xl sm:text-5xl xl:text-6xl">
-               {t("subheading")}&nbsp;
+               {t("heading")}&nbsp;
             </h1>
             <p className=" text-gray-900/70 my-4 text-xl ">
                 {t("description")}

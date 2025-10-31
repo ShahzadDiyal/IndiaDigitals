@@ -15,6 +15,7 @@ import {
   UploadCloud,
 } from "lucide-react";
 import BlogSection from "@/components/home/BlogSection";
+import ContactSection from "@/components/ContactSection";
 
 export default function HireDeveloperPage() {
   return (
@@ -195,6 +196,7 @@ export default function HireDeveloperPage() {
           </div>
         </div>
       </section>
+      <ContactSection />
       <BlogSection />
       <Footer />
     </div>

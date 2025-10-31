@@ -65,31 +65,28 @@ const Navbar = () => {
     cybersecurity: "/services/cybersecurity",
     devOps: "/services/devops",
     softwareDevelopment: "/services/software-Development",
-    computerVision:"/services/computer-vision",
-phpDev: "/technologies/hire-php-developer",
-shopifyDev: "/technologies/hire-shopify-developer",
-wordpressDev: "/technologies/hire-wordpress-developer",
-reactDev: "/technologies/hire-react-developer",
-pythonDev: "/technologies/hire-python-developer",
-nodejsDev: "/technologies/hire-nodejs-developer",
-javaDev: "/technologies/hire-javascript-developer",
-laravalDev: "/technologies/hire-laraval-developer",
-magentoDev: "/technologies/hire-magento-developer",
-angularDev: "/technologies/hire-angular-developer",
+    computerVision: "/services/computer-vision",
+    phpDev: "/technologies/hire-php-developer",
+    shopifyDev: "/technologies/hire-shopify-developer",
+    wordpressDev: "/technologies/hire-wordpress-developer",
+    reactDev: "/technologies/hire-react-developer",
+    pythonDev: "/technologies/hire-python-developer",
+    nodejsDev: "/technologies/hire-nodejs-developer",
+    javaDev: "/technologies/hire-javascript-developer",
+    laravalDev: "/technologies/hire-laraval-developer",
+    magentoDev: "/technologies/hire-magento-developer",
+    angularDev: "/technologies/hire-angular-developer",
 
-vuejsDev: "/technologies/hire-vuejs-developer",
-awsExpert: "/technologies/hire-aws-developer",
-iosDev: "/technologies/hire-ios-developer",
-androidDev: "/technologies/hire-android-developer",
-cloudEngr: "/technologies/hire-cloud-developer",
-uiUxDev: "/technologies/hire-uiUx-developer",
-databaseDev: "/technologies/hire-database-developer",
-fullStackDev: "/technologies/hire-fullstack-developer",
-DevOpsDev: "/technologies/hire-devOps-developer",
-qaEngr: "/technologies/hire-qa-developer",
-
-
-    
+    vuejsDev: "/technologies/hire-vuejs-developer",
+    awsExpert: "/technologies/hire-aws-developer",
+    iosDev: "/technologies/hire-ios-developer",
+    androidDev: "/technologies/hire-android-developer",
+    cloudEngr: "/technologies/hire-cloud-developer",
+    uiUxDev: "/technologies/hire-uiUx-developer",
+    databaseDev: "/technologies/hire-database-developer",
+    fullStackDev: "/technologies/hire-fullstack-developer",
+    DevOpsDev: "/technologies/hire-devOps-developer",
+    qaEngr: "/technologies/hire-qa-developer",
   };
 
   const topSolKeys1 = [
@@ -101,7 +98,7 @@ qaEngr: "/technologies/hire-qa-developer",
     "cybersecurity",
     "devOps",
     "softwareDevelopment",
-    "computerVision"
+    "computerVision",
   ];
 
   const topSolKeys2 = [
@@ -146,15 +143,7 @@ qaEngr: "/technologies/hire-qa-developer",
     "DevOpsDev",
     "qaEngr",
   ];
-  const techKeys3 = [
-    "python",
-    "react",
-    "ruby",
-    "salesforce",
-    "typescript",
-    "vuejs",
-    "xamarin",
-  ];
+  const techKeys3 = [];
 
   return (
     //  p-[1.1rem]
@@ -432,56 +421,55 @@ qaEngr: "/technologies/hire-qa-developer",
 
                   {/* Second Column */}
                   <div className="p-8">
-  <ul className="flex flex-col gap-2 mb-3 pt-3 text-gray-600">
-    {techKeys1.map((tech, i) => (
-      <li key={i}>
-        <a
-          href={linkMap[tech]}
-          onClick={(e) => {
-            e.preventDefault();
-            window.location.href = linkMap[tech];
-          }}
-          className="hover:underline cursor-pointer"
-          style={{ fontSize: "18px", padding: "25px" }}
-        >
-          {t(tech)}
-        </a>
-      </li>
-    ))}
-  </ul>
+                    <ul className="flex flex-col gap-2 mb-3 pt-3 text-gray-600">
+                      {techKeys1.map((tech, i) => (
+                        <li key={i}>
+                          <a
+                            href={linkMap[tech]}
+                            onClick={(e) => {
+                              e.preventDefault();
+                              window.location.href = linkMap[tech];
+                            }}
+                            className="hover:underline cursor-pointer"
+                            style={{ fontSize: "18px", padding: "25px" }}
+                          >
+                            {t(tech)}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
 
-  <a
-    href="/technologies"
-    className="hover:underline font-semibold flex items-center gap-2 pt-4 text-xl"
-    style={{ padding: "25px" }}
-    dir="auto"
-  >
-    {t("allSolutions")}
-    <span className="rtl:inline ltr:hidden">←</span>
-    <span className="ltr:inline rtl:hidden">→</span>
-  </a>
-</div>
-
+                    <a
+                      href="/technologies"
+                      className="hover:underline font-semibold flex items-center gap-2 pt-4 text-xl"
+                      style={{ padding: "25px" }}
+                      dir="auto"
+                    >
+                      {t("allSolutions")}
+                      <span className="rtl:inline ltr:hidden">←</span>
+                      <span className="ltr:inline rtl:hidden">→</span>
+                    </a>
+                  </div>
 
                   {/* Third Column */}
                   <div className="p-8">
                     <ul className="flex flex-col gap-2 mb-3 pt-3 text-gray-600">
-    {techKeys2.map((tech, i) => (
-      <li key={i}>
-        <a
-          href={linkMap[tech]}
-          onClick={(e) => {
-            e.preventDefault();
-            window.location.href = linkMap[tech];
-          }}
-          className="hover:underline cursor-pointer"
-          style={{ fontSize: "18px", padding: "25px" }}
-        >
-          {t(tech)}
-        </a>
-      </li>
-    ))}
-  </ul>
+                      {techKeys2.map((tech, i) => (
+                        <li key={i}>
+                          <a
+                            href={linkMap[tech]}
+                            onClick={(e) => {
+                              e.preventDefault();
+                              window.location.href = linkMap[tech];
+                            }}
+                            className="hover:underline cursor-pointer"
+                            style={{ fontSize: "18px", padding: "25px" }}
+                          >
+                            {t(tech)}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
 
                   {/* Fourth Column */}

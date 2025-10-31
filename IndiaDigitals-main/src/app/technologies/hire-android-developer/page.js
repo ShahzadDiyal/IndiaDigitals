@@ -15,6 +15,7 @@ import {
   UploadCloud,
 } from "lucide-react";
 import BlogSection from "@/components/home/BlogSection";
+import ContactSection from "@/components/ContactSection";
 
 export default function HireDeveloperPage() {
   return (
@@ -204,6 +205,7 @@ David Smith, CEO, Appify
           </div>
         </div>
       </section>
+      <ContactSection />
       <BlogSection />
       <Footer />
     </div>
